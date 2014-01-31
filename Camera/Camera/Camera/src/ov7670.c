@@ -257,7 +257,15 @@ unsigned char FIFO_init(void)
 	ioport_set_pin_dir(FIFO_WEN, IOPORT_DIR_OUTPUT);
 	ioport_set_pin_dir(FIFO_nRRST, IOPORT_DIR_OUTPUT);
 		
-		
+	ioport_set_pin_dir(OV7670_D0, IOPORT_DIR_INPUT);
+	ioport_set_pin_dir(OV7670_D1, IOPORT_DIR_INPUT);
+	ioport_set_pin_dir(OV7670_D2, IOPORT_DIR_INPUT);
+	ioport_set_pin_dir(OV7670_D3, IOPORT_DIR_INPUT);
+	ioport_set_pin_dir(OV7670_D4, IOPORT_DIR_INPUT);
+	ioport_set_pin_dir(OV7670_D5, IOPORT_DIR_INPUT);
+	ioport_set_pin_dir(OV7670_D6, IOPORT_DIR_INPUT);
+	ioport_set_pin_dir(OV7670_D7, IOPORT_DIR_INPUT);
+	
 	FIFO_WRST_CLR;
 	FIFO_RCLK_CLR;
 	FIFO_nOE_CLR;
@@ -381,13 +389,20 @@ uint8_t GetImageIfAvailiable( int offset )
 		FIFO_RCLK_SET;
 		FIFO_RCLK_CLR;
 		FIFO_nRRST_SET;
+		FIFO_nOE_CLR;
 		delay_ms(1);
+		/** @ashleyjr - this is where the reading occurs
+			It's broken down into rows and colums and it reads L/R; U/D.
+			I've set it to send the raw values up the UART for now.
+			I'm also not certain on the endianness...*/
 		for (j=HEIGHT; j > 0; j--) //Read all data
 		{
-			ptr = 0;
+			
 			for (i=0; i < WIDTH; i++)
 			{
 				Temp=FIFO_TO_AVR();
+				usart_putchar(BOARD_USART, Temp);
+				usart_putchar(BOARD_USART, (Temp >> 8));
 			}
 		}
 		/*f_close(&File);*/
@@ -396,6 +411,7 @@ uint8_t GetImageIfAvailiable( int offset )
 		FIFO_RCLK_SET;
 		FIFO_RCLK_CLR;
 		FIFO_nRRST_SET;
+		FIFO_nOE_SET;
 		VSYNC_Count = 0; //No image present in buffer
 		// 		xprintf(PSTR("Success!\n"));
 		// 		xprintf(PSTR("Closing File: %d\n"), f_close(&File[0]));
@@ -407,6 +423,7 @@ uint8_t GetImageIfAvailiable( int offset )
 	}
 }
 
+/** starts the VSYNC state machine off */
 void LoadImageToBuffer( void )
 {
 	while(VSYNC_Count != 0); //wait for any frame to be written to complete
@@ -423,17 +440,52 @@ uint16_t FIFO_TO_AVR(void)
 	uint16_t data = 0;
 	
 	//FIFO_AVR_DPRT=0;
-	
+	//@todo work out a more efficient way of doing this... 
 	FIFO_RCLK_SET;
 	//data = FIFO_AVR_PINP;
-
+	data |= ioport_get_pin_level(OV7670_D7);//get it and shift it up
+	data <<= 1;
+	data |= ioport_get_pin_level(OV7670_D6);//get it and shift it up
+	data <<= 1;
+	data |= ioport_get_pin_level(OV7670_D5);//get it and shift it up
+	data <<= 1;
+	data |= ioport_get_pin_level(OV7670_D4);//get it and shift it up
+	data <<= 1;
+	data |= ioport_get_pin_level(OV7670_D3);//get it and shift it up
+	data <<= 1;
+	data |= ioport_get_pin_level(OV7670_D2);//get it and shift it up
+	data <<= 1;
+	data |= ioport_get_pin_level(OV7670_D1);//get it and shift it up
+	data <<= 1;
+	data |= ioport_get_pin_level(OV7670_D0);//get it and shift it up
+	data <<= 1;
 	FIFO_RCLK_CLR;
-
-	data <<= 8;
-	
 	FIFO_RCLK_SET;
 	//data |= FIFO_AVR_PINP;
-
+	if (ioport_get_pin_level(OV7670_D7))//get it and shift it up
+		data |= 1;
+	data <<= 1;
+	if (ioport_get_pin_level(OV7670_D6))//get it and shift it up
+		data |= 1;
+	data <<= 1;
+	if (ioport_get_pin_level(OV7670_D5))//get it and shift it up
+		data |= 1;
+	data <<= 1;
+	if (ioport_get_pin_level(OV7670_D4))//get it and shift it up
+		data |= 1;
+	data <<= 1;
+	if (ioport_get_pin_level(OV7670_D3))//get it and shift it up
+		data |= 1;
+	data <<= 1;
+	if (ioport_get_pin_level(OV7670_D2))//get it and shift it up
+		data |= 1;
+	data <<= 1;
+	if (ioport_get_pin_level(OV7670_D1))//get it and shift it up
+		data |= 1;
+	data <<= 1;
+	if (ioport_get_pin_level(OV7670_D0))//get it and shift it up
+		data |= 1;
+	//data=0x5555;
 	FIFO_RCLK_CLR;
 	
 	//	FIFO_RCLK_SET;

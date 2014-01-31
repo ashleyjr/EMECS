@@ -122,6 +122,7 @@ int main(void)
 	printf("Get Image!\n\r");
 	LoadImageToBuffer();
 	while ( STATUS_ERR_BUSY == GetImageIfAvailiable(0));
+	printf("Done!\n\r");
 	while (1) {
 	}
 }

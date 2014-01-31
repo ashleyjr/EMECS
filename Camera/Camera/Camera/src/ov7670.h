@@ -31,14 +31,22 @@
 #define OV7670_VSYNC_EVENT     PIN_PC25
 
 #define FIFO_WRST		PIN_PB12
-#define FIFO_RCLK		PIN_PB00
+#define FIFO_RCLK		PIN_PB01
 #define FIFO_nOE		PIN_PA05
 #define FIFO_WEN		PIN_PC02
-#define FIFO_nRRST		PIN_PB01
+#define FIFO_nRRST		PIN_PB00
 
 #define TWI_SCL			PIN_PA23
 #define TWI_SDA			PIN_PA24
 
+#define OV7670_D0		PIN_PC00
+#define OV7670_D1		PIN_PC01
+#define OV7670_D2		PIN_PC03
+#define OV7670_D3		PIN_PC30
+#define OV7670_D4		PIN_PA04
+#define OV7670_D5		PIN_PA21
+#define OV7670_D6		PIN_PA22
+#define OV7670_D7		PIN_PB13
 // #define FIFO_AVR_DPRT		
 // #define FIFO_AVR_PORT		
 // #define FIFO_AVR_PINP		
