@@ -134,10 +134,10 @@ static status_code_t init_twi(void)
  *
  * \return STATUS_OK   if all bytes were written, error code otherwise.
  */
-static status_code_t write_test(void)
+static status_code_t write_test(uint8_t addr)
 {
 	/* TWI chip address to communicate with */
-	packet_tx.chip = TARGET_ADDRESS;
+	packet_tx.chip = addr;
 	/* TWI address/commands to issue to the other chip (node) */
 	packet_tx.addr[0] = (VIRTUALMEM_ADDR >> 16) & 0xFF;
 	packet_tx.addr[1] = (VIRTUALMEM_ADDR >> 8) & 0xFF;
@@ -147,11 +147,10 @@ static status_code_t write_test(void)
 	packet_tx.buffer = (void *) write_data;
 	/* How many bytes do we want to write */
 	packet_tx.length = PATTERN_TEST_LENGTH;
-	printf("Writing data to TARGET\r\n");
+	//printf("Writing data to TARGET\r\n");
 	/* Write data to TARGET */
 	return twi_master_write(EXAMPLE_TWIM, &packet_tx);
 }
-
 
 /**
  * \brief Application entry point for usart_serial example.
@@ -161,6 +160,7 @@ static status_code_t write_test(void)
 int main(void)
 {
 	status_code_t status;
+	uint8_t addr;
 	/* Initialize the SAM system. */
 	sysclk_init();
 	board_init();
@@ -169,22 +169,27 @@ int main(void)
 	configure_console();
 
 	/* Output example information. */
-	puts("Camera App\n\r");
+	puts("\n\r\nCamera App\n\r");
 
-	puts("Start Scan...");
-
+	puts("Start Scan...\n\r");
+	
+	addr = TARGET_ADDRESS;
 	/* Perform Write Test */
-	status = write_test();
-	/* Check status of transfer */
-	if (status == STATUS_OK) {
-		printf("WRITE TEST:\tPASS\r\n");
-		} else {
-		printf("WRITE TEST:\tFAILED\r\n");
-		while (1) {
-			sleepmgr_enter_sleep();
+	for(addr = 1; addr < 128; addr++)
+	{
+		status = write_test(addr);
+		/* Check status of transfer */
+		if (status == STATUS_OK) 
+		{
+			printf("Addr: %02x \tPASS\r\n", addr);
+		} 
+		else 
+		{
+			//puts("FAIL\n");
+			printf("Addr:%02x\tFAILED\r\n", addr);
 		}
 	}
-	
+		
 	while (1) {
 	}
 }
