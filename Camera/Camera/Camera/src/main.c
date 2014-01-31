@@ -118,6 +118,10 @@ int main(void)
 	{
 		printf("Initialise fail\n\r");
 	}
+	
+	printf("Get Image!\n\r");
+	LoadImageToBuffer();
+	while ( STATUS_ERR_BUSY == GetImageIfAvailiable(0));
 	while (1) {
 	}
 }

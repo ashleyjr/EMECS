@@ -60,12 +60,12 @@
 #define PDCA_PID_USART_TX          19
 
 /** Enable TWIM3 pins. */
-#define CONF_BOARD_TWIMS3
+#define CONF_BOARD_TWIMS0
 
 /** TWIM Interrupt Number */
-#define EXAMPLE_TWIM_IRQn    TWIM3_IRQn
+//#define EXAMPLE_TWIM_IRQn    TWIM3_IRQn
 /** TWIM Module Used */
-#define EXAMPLE_TWIM         TWIM3
+//#define EXAMPLE_TWIM         TWIM3
 /** Target's TWI address */
 #define TARGET_ADDRESS       0x50
 /** Internal Address length */
@@ -75,7 +75,7 @@
 /** Speed of TWI */
 #define TWIM_MASTER_SPEED    TWI_STD_MODE_SPEED
 /** TWIM Interrupt Handler */
-#define EXAMPLE_TWIM_Handler TWIM3_Handler
+#define EXAMPLE_TWIM_Handler TWIM0_Handler
 
 
 #endif /* CONF_BOARD_H_INCLUDED */

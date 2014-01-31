@@ -196,7 +196,7 @@ uint32_t cpu_speed = 0;
 static status_code_t init_twi(void)
 {
 	/* Set TWIM options */
-	cpu_speed = sysclk_get_peripheral_bus_hz(EXAMPLE_TWIM);
+	cpu_speed = sysclk_get_peripheral_bus_hz(OV7670_TWI);
 	struct twim_config opts = {
 		.twim_clk = cpu_speed,
 		.speed = TWIM_MASTER_SPEED,
@@ -215,9 +215,9 @@ static status_code_t init_twi(void)
 		.hs_data_drive_strength_low = 0,
 	};
 	/* Initialize the TWIM Module */
-	twim_set_callback(EXAMPLE_TWIM, 0, twim_default_callback, 1);
+	twim_set_callback(OV7670_TWI, 0, twim_default_callback, 1);
 
-	return twim_set_config(EXAMPLE_TWIM, &opts);
+	return twim_set_config(OV7670_TWI, &opts);
 }
 
 /**
@@ -241,37 +241,62 @@ static status_code_t write_twi(unsigned char regID, unsigned char regDat)
 	packet_tx.length = PATTERN_TEST_LENGTH;
 	//printf("Writing data to TARGET\r\n");
 	/* Write data to TARGET */
-	return twi_master_write(EXAMPLE_TWIM, &packet_tx);
+	return twi_master_write(OV7670_TWI, &packet_tx);
 }
 
-static status_code_t wrOV7670Reg(unsigned char regID, unsigned char regDat)
-{
-	/*	I2C Traffic Generated:
-	 *	S | OV_7670 + W | A | RegID | A | Data | A | P |
-	 */
-		twi_package_t tx;
-		uint8_t data[2] = {1,2};
-		/* TWI chip address to communicate with */
-		tx.chip = 0x21;
-		/* TWI address/commands to issue to the other chip (node) */
-		tx.addr[0] = regID; 
-		/* Length of the TWI data address segment (1-3 bytes) */
-		tx.addr_length = 1;
-		/* Where to find the data to be written */
-		tx.buffer = (void *) &data;
-		/* How many bytes do we want to write */
-		tx.length = 1;
-		//printf("Writing data to TARGET\r\n");
-		/* Write data to TARGET */
-		printf("Tx Packet:\n\r");
-		printf("Addr: %02x \r\n", tx.chip);
-		return twi_master_write(EXAMPLE_TWIM, &tx);
 
+//Initial FIFO
+unsigned char FIFO_init(void)
+{
+	
+	//OV7670_CTRL_DDR |=(1<<FIFO_WEN)|(1<<FIFO_nRRST)|(1<<FIFO_RCLK)|(1 << FIFO_WRST) | (1 << FIFO_nOE);
+		//configure all control to outputs, and all data to inputs
+	ioport_set_pin_dir(FIFO_WRST, IOPORT_DIR_OUTPUT);
+	ioport_set_pin_dir(FIFO_RCLK, IOPORT_DIR_OUTPUT);
+	ioport_set_pin_dir(FIFO_nOE, IOPORT_DIR_OUTPUT);
+	ioport_set_pin_dir(FIFO_WEN, IOPORT_DIR_OUTPUT);
+	ioport_set_pin_dir(FIFO_nRRST, IOPORT_DIR_OUTPUT);
+		
+		
+	FIFO_WRST_CLR;
+	FIFO_RCLK_CLR;
+	FIFO_nOE_CLR;
+	FIFO_nRRST_SET;
+	FIFO_WEN_CLR;
+	delay_us(10);
+	FIFO_RCLK_SET;
+	delay_us(10);
+	FIFO_RCLK_CLR;
+	FIFO_nRRST_CLR;
+	delay_us(10);
+	FIFO_RCLK_SET;
+	delay_us(10);
+	FIFO_RCLK_CLR;
+	FIFO_nRRST_SET;
+	delay_us(10);
+	FIFO_WRST_SET;
+	FIFO_nOE_SET;
+	return STATUS_OK; //okay
 }
 
 static void VSYNC_Callback(void)
 {
 	LED_Toggle(LED0);
+	if (VSYNC_Count==1)//start a frame read
+	{
+		/*xprintf(PSTR("WEN Set\n"));*/
+		FIFO_WEN_SET;
+		VSYNC_Count++;
+	}
+	else if (VSYNC_Count==2)//end a frame read
+	{
+		FIFO_WEN_CLR;
+		/*xprintf(PSTR("WEN Clear\n"));*/
+	}
+	else
+	{
+		VSYNC_Count = 0;//wait for a read to be started
+	}
 }
 static void init_pevc(void)
 {
@@ -302,6 +327,7 @@ unsigned char OV7670_init(void)
 {
 	uint8_t temp;
 	status_code_t status;
+	VSYNC_Count = 0;
 	printf("Inialising I2C\n\r");
 	init_twi();
 	printf("Inialising Camera\n\r");
@@ -319,7 +345,7 @@ unsigned char OV7670_init(void)
 		}
 		delay_ms(1);
 	}
-
+	FIFO_init();
 	/* Configure push button 0 to trigger an interrupt on falling edge */
 	ioport_set_pin_dir(OV7670_VSYNC_PIN, IOPORT_DIR_INPUT);
 	ioport_set_pin_mode(OV7670_VSYNC_PIN, IOPORT_MODE_PULLUP | IOPORT_MODE_GLITCH_FILTER);
@@ -338,4 +364,82 @@ unsigned char OV7670_init(void)
 	init_pevc();
 	
 	return STATUS_OK;
+}
+
+
+//Reads all data from the buffer if an image has been written
+uint8_t GetImageIfAvailiable( int offset )
+{
+	if (VSYNC_Count == 2)//if one full frame has elapsed.
+	{
+		uint32_t p;
+		unsigned long int pointer;
+		//FRESULT fr;
+		int i,j, ptr;
+		uint16_t Temp;
+		FIFO_nRRST_CLR; //Reset Read Pointer
+		FIFO_RCLK_SET;
+		FIFO_RCLK_CLR;
+		FIFO_nRRST_SET;
+		delay_ms(1);
+		for (j=HEIGHT; j > 0; j--) //Read all data
+		{
+			ptr = 0;
+			for (i=0; i < WIDTH; i++)
+			{
+				Temp=FIFO_TO_AVR();
+			}
+		}
+		/*f_close(&File);*/
+		/*FIFO_Reset();*/
+		FIFO_nRRST_CLR; //Reset Read Pointer
+		FIFO_RCLK_SET;
+		FIFO_RCLK_CLR;
+		FIFO_nRRST_SET;
+		VSYNC_Count = 0; //No image present in buffer
+		// 		xprintf(PSTR("Success!\n"));
+		// 		xprintf(PSTR("Closing File: %d\n"), f_close(&File[0]));
+		return STATUS_OK; //Success!
+	}
+	else
+	{
+		return STATUS_ERR_BUSY;// No image available
+	}
+}
+
+void LoadImageToBuffer( void )
+{
+	while(VSYNC_Count != 0); //wait for any frame to be written to complete
+	FIFO_WRST_CLR;//Reset the write pointer
+	delay_ms(1);//wait a few clock cycles of the internal oscillator
+	FIFO_WRST_SET;
+	delay_ms(1);
+	VSYNC_Count = 1;
+}
+
+//Write one pixel in AVR
+uint16_t FIFO_TO_AVR(void)
+{
+	uint16_t data = 0;
+	
+	//FIFO_AVR_DPRT=0;
+	
+	FIFO_RCLK_SET;
+	//data = FIFO_AVR_PINP;
+
+	FIFO_RCLK_CLR;
+
+	data <<= 8;
+	
+	FIFO_RCLK_SET;
+	//data |= FIFO_AVR_PINP;
+
+	FIFO_RCLK_CLR;
+	
+	//	FIFO_RCLK_SET;
+	//	FIFO_RCLK_CLR;
+	//	FIFO_RCLK_SET;
+	//	FIFO_RCLK_CLR;
+
+	return(data);
 }

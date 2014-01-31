@@ -24,25 +24,29 @@
 //////////////////////////////////////////////////////////////////////////
 //	Pin Definitions
 //////////////////////////////////////////////////////////////////////////
-#define OV7670_CTRL_PORT 
-#define OV7670_CTRL_DDR 
-#define OV7670_VSYNC	
-#define FIFO_WRST		
-#define FIFO_RCLK		
-#define FIFO_nOE		
-#define FIFO_WEN		
-#define FIFO_nRRST		
 
-#define TWI_SCL			
-#define TWI_SDA			
+#define OV7670_TWI	TWIM0
 
-#define FIFO_AVR_DPRT		
-#define FIFO_AVR_PORT		
-#define FIFO_AVR_PINP		
+#define OV7670_VSYNC_PIN    PIN_PC25
+#define OV7670_VSYNC_EVENT     PIN_PC25
+
+#define FIFO_WRST		PIN_PB12
+#define FIFO_RCLK		PIN_PB00
+#define FIFO_nOE		PIN_PA05
+#define FIFO_WEN		PIN_PC02
+#define FIFO_nRRST		PIN_PB01
+
+#define TWI_SCL			PIN_PA23
+#define TWI_SDA			PIN_PA24
+
+// #define FIFO_AVR_DPRT		
+// #define FIFO_AVR_PORT		
+// #define FIFO_AVR_PINP		
 
 //////////////////////////////////////////////////////////////////////////
 //	Macros
 //////////////////////////////////////////////////////////////////////////
+/* These no work on SAM... 
 #define FIFO_RCLK_SET		{	OV7670_CTRL_PORT	|=	(1<<FIFO_RCLK);		}
 #define FIFO_RCLK_CLR		{	OV7670_CTRL_PORT	&=	~(1<<FIFO_RCLK);	}
 #define FIFO_WEN_SET		{	OV7670_CTRL_PORT	|=	(1<<FIFO_WEN);		}
@@ -52,17 +56,24 @@
 #define FIFO_nOE_SET		{	OV7670_CTRL_PORT	|=	(1<<FIFO_nOE);		}
 #define FIFO_nOE_CLR		{	OV7670_CTRL_PORT	&=	~(1<<FIFO_nOE);		}
 #define FIFO_WRST_SET		{	OV7670_CTRL_PORT	|=	(1<<FIFO_WRST);		}
-#define FIFO_WRST_CLR		{	OV7670_CTRL_PORT	&=	~(1<<FIFO_WRST);	}
+#define FIFO_WRST_CLR		{	OV7670_CTRL_PORT	&=	~(1<<FIFO_WRST);	}*/
 
-
+#define FIFO_RCLK_SET		ioport_set_pin_level(FIFO_RCLK, 1)
+#define FIFO_RCLK_CLR		ioport_set_pin_level(FIFO_RCLK, 0)
+#define FIFO_WEN_SET		ioport_set_pin_level(FIFO_WEN, 1)
+#define FIFO_WEN_CLR		ioport_set_pin_level(FIFO_WEN, 0)
+#define FIFO_nRRST_SET		ioport_set_pin_level(FIFO_nRRST, 1)
+#define FIFO_nRRST_CLR		ioport_set_pin_level(FIFO_nRRST, 0)
+#define FIFO_nOE_SET		ioport_set_pin_level(FIFO_nOE, 1)
+#define FIFO_nOE_CLR		ioport_set_pin_level(FIFO_nOE, 0)
+#define FIFO_WRST_SET		ioport_set_pin_level(FIFO_WRST, 1)
+#define FIFO_WRST_CLR		ioport_set_pin_level(FIFO_WRST, 0)
 //////////////////////////////////////////////////////////////////////////
 //	Global Variables
 //////////////////////////////////////////////////////////////////////////
 volatile int VSYNC_Count;
 /*const char default_settings[CHANGE_REG_NUM][2];*/
 
-#define OV7670_VSYNC_PIN    PIN_PA06
-#define OV7670_VSYNC_EVENT     PIN_PA06
 
 //////////////////////////////////////////////////////////////////////////
 //	Methods
@@ -70,6 +81,9 @@ volatile int VSYNC_Count;
 unsigned char OV7670_init(void);						//Initialises Camera
 //unsigned char FIFO_init(void);							//Initialises Buffer
 static status_code_t  wrOV7670Reg(unsigned char regID, unsigned char regDat);	//Writes to a register
+void LoadImageToBuffer( void );
+uint8_t GetImageIfAvailiable( int offset );
+uint16_t FIFO_TO_AVR(void);
 //unsigned char rdOV7670Reg(unsigned char regID, unsigned char *regDat);	//Reads a register
 // uint8_t GetImageIfAvailiable(int offset);				//Gets all pixel data if available
 // void LoadImageToBuffer(void);					//Loads an image into the FIFO Buffer
