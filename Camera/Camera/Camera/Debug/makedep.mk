@@ -4,6 +4,10 @@
 
 src\ASF\common\services\delay\sam\cycle_counter.c
 
+src\ASF\sam\drivers\events\events.c
+
+src\ASF\sam\drivers\gpio\gpio.c
+
 src\ov7670.c
 
 src\ASF\common\services\serial\usart_serial.c

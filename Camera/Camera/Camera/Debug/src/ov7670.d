@@ -134,9 +134,11 @@ src/ov7670.d src/ov7670.o: ../src/ov7670.c ../src/ov7670.h ../src/asf.h \
  ../src/ASF/common/services/clock/sam4l/pll.h \
  ../src/ASF/common/services/delay/sam/cycle_counter.h \
  ../src/ASF/sam/drivers/flashcalw/flashcalw.h \
+ ../src/ASF/sam/drivers/gpio/gpio.h \
  ../src/ASF/common/services/ioport/ioport.h \
  ../src/ASF/common/services/ioport/sam/ioport_gpio.h \
- ../src/ASF/sam/drivers/pdca/pdca.h ../src/ASF/sam/drivers/bpm/bpm.h \
+ ../src/ASF/sam/drivers/pdca/pdca.h \
+ ../src/ASF/sam/drivers/events/events.h ../src/ASF/sam/drivers/bpm/bpm.h \
  ../src/ASF/sam/boards/sam4l_xplained_pro/led.h \
  ../src/ASF/sam/utils/cmsis/sam4l/source/templates/exceptions.h \
  ../src/ASF/common/services/sleepmgr/sam4l/sleepmgr.h \
@@ -428,11 +430,15 @@ c:\program\ files\ (x86)\atmel\atmel\ toolchain\arm\ gcc\native\4.7.3.1029\arm-g
 
 ../src/ASF/sam/drivers/flashcalw/flashcalw.h:
 
+../src/ASF/sam/drivers/gpio/gpio.h:
+
 ../src/ASF/common/services/ioport/ioport.h:
 
 ../src/ASF/common/services/ioport/sam/ioport_gpio.h:
 
 ../src/ASF/sam/drivers/pdca/pdca.h:
+
+../src/ASF/sam/drivers/events/events.h:
 
 ../src/ASF/sam/drivers/bpm/bpm.h:
 

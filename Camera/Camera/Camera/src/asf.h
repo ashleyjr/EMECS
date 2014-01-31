@@ -62,6 +62,9 @@
 // From module: FLASHCALW Controller Software Driver
 #include <flashcalw.h>
 
+// From module: GPIO - General-Purpose Input/Output
+#include <gpio.h>
+
 // From module: Generic board support
 #include <board.h>
 
@@ -73,6 +76,9 @@
 
 // From module: PDCA - Peripheral DMA Controller
 #include <pdca.h>
+
+// From module: PEVC - Peripheral Event Controller Driver for SAM
+#include <events.h>
 
 // From module: Part identification macros
 #include <parts.h>

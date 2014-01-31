@@ -269,6 +269,35 @@ static status_code_t wrOV7670Reg(unsigned char regID, unsigned char regDat)
 
 }
 
+static void VSYNC_Callback(void)
+{
+	LED_Toggle(LED0);
+}
+static void init_pevc(void)
+{
+	/* Set input glitch filter divider to 0x0A (2^10) */
+	struct events_conf config;
+	events_get_config_defaults(&config);
+	events_init(&config);
+
+	/*
+	 * Setup and enable PEVC channel:
+	 * - Generator: PAD_EVT 1
+	 * - User: PDCA - channel 0 transfer one word
+	 * - Enable falling edge detection for EVS
+	 */
+	struct events_ch_conf ch_config;
+	events_ch_get_config_defaults(&ch_config);
+	ch_config.channel_id = PEVC_ID_USER_PDCA_0;
+	ch_config.generator_id = PEVC_ID_GEN_PAD_1;
+	ch_config.shaper_enable = true;
+	ch_config.igf_edge = EVENT_IGF_EDGE_FALLING;
+	events_ch_configure(&ch_config);
+	events_ch_enable(PEVC_ID_USER_PDCA_0);
+}
+
+
+
 unsigned char OV7670_init(void)
 {
 	uint8_t temp;
@@ -290,10 +319,23 @@ unsigned char OV7670_init(void)
 		}
 		delay_ms(1);
 	}
-	// 	temp=0x80;
-// 	if(STATUS_OK!=wrOV7670Reg(OV_COM7, temp)) //Reset Camera
-// 	{
-// 		return STATUS_ERR_DENIED;
-// 	}
+
+	/* Configure push button 0 to trigger an interrupt on falling edge */
+	ioport_set_pin_dir(OV7670_VSYNC_PIN, IOPORT_DIR_INPUT);
+	ioport_set_pin_mode(OV7670_VSYNC_PIN, IOPORT_MODE_PULLUP | IOPORT_MODE_GLITCH_FILTER);
+	ioport_set_pin_sense_mode(OV7670_VSYNC_PIN, IOPORT_SENSE_FALLING);
+	if (!gpio_set_pin_callback(OV7670_VSYNC_PIN, VSYNC_Callback, 1)) {
+		printf("Set pin callback failure!\r\n");
+		return STATUS_ERR_DENIED;
+	}
+	gpio_enable_pin_interrupt(OV7670_VSYNC_PIN);
+
+	/* Configure pin to trigger an enent on falling edge */
+	ioport_set_pin_mode(OV7670_VSYNC_EVENT, IOPORT_MODE_PULLUP | IOPORT_MODE_MUX_C);
+	ioport_disable_pin(OV7670_VSYNC_EVENT);
+	ioport_set_pin_sense_mode(OV7670_VSYNC_EVENT, IOPORT_SENSE_FALLING);
+	gpio_enable_pin_periph_event(OV7670_VSYNC_EVENT);
+	init_pevc();
+	
 	return STATUS_OK;
 }
