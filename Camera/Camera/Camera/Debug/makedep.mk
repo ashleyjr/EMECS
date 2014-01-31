@@ -2,6 +2,10 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+src\ASF\common\services\delay\sam\cycle_counter.c
+
+src\ov7670.c
+
 src\ASF\common\services\serial\usart_serial.c
 
 src\ASF\common\services\sleepmgr\sam4l\sleepmgr.c

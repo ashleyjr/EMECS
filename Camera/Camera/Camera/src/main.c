@@ -3,6 +3,7 @@
 #include <asf.h>
 #include "conf_board.h"
 #include "conf_clock.h"
+#include "ov7670.h"
 
 /** Size of the receive buffer used by the PDCA, in bytes. */
 #define BUFFER_SIZE         100
@@ -86,71 +87,6 @@ static void configure_console(void)
 	stdio_serial_init(CONF_UART, &uart_serial_options);
 }
 
-/**
- * \brief Initialize the TWIM module.
- *
- * \return STATUS_OK   if the initialization succeeds, error code otherwise.
- */
-#define PATTERN_TEST_LENGTH (sizeof(write_data)/sizeof(uint8_t))
-//! Array to store the test data for sending
-const uint8_t write_data[] = {
-	'S', 'A', 'M', '4', 'L', ' ', 'T', 'W', 'I', 'M', ' ', 'M',
-	'a', 's', 't', 'e', 'r', ' ', 'E', 'x', 'a', 'm', 'p', 'l', 'e'
-};
-//! Array to store the received test data
-uint8_t read_data[PATTERN_TEST_LENGTH];
-twi_package_t packet_tx, packet_rx;
-uint32_t cpu_speed = 0;
-
-static status_code_t init_twi(void)
-{
-	/* Set TWIM options */
-	cpu_speed = sysclk_get_peripheral_bus_hz(EXAMPLE_TWIM);
-	struct twim_config opts = {
-		.twim_clk = cpu_speed,
-		.speed = TWIM_MASTER_SPEED,
-		.hsmode_speed = 0,
-		.data_setup_cycles = 0,
-		.hsmode_data_setup_cycles = 0,
-		.smbus = false,
-		.clock_slew_limit = 0,
-		.clock_drive_strength_low = 0,
-		.data_slew_limit = 0,
-		.data_drive_strength_low = 0,
-		.hs_clock_slew_limit = 0,
-		.hs_clock_drive_strength_high = 0,
-		.hs_clock_drive_strength_low = 0,
-		.hs_data_slew_limit = 0,
-		.hs_data_drive_strength_low = 0,
-	};
-	/* Initialize the TWIM Module */
-	twim_set_callback(EXAMPLE_TWIM, 0, twim_default_callback, 1);
-
-	return twim_set_config(EXAMPLE_TWIM, &opts);
-}
-
-/**
- * \brief Write the data pattern to the target.
- *
- * \return STATUS_OK   if all bytes were written, error code otherwise.
- */
-static status_code_t write_test(uint8_t addr)
-{
-	/* TWI chip address to communicate with */
-	packet_tx.chip = addr;
-	/* TWI address/commands to issue to the other chip (node) */
-	packet_tx.addr[0] = (VIRTUALMEM_ADDR >> 16) & 0xFF;
-	packet_tx.addr[1] = (VIRTUALMEM_ADDR >> 8) & 0xFF;
-	/* Length of the TWI data address segment (1-3 bytes) */
-	packet_tx.addr_length = TARGET_ADDR_LGT;
-	/* Where to find the data to be written */
-	packet_tx.buffer = (void *) write_data;
-	/* How many bytes do we want to write */
-	packet_tx.length = PATTERN_TEST_LENGTH;
-	//printf("Writing data to TARGET\r\n");
-	/* Write data to TARGET */
-	return twi_master_write(EXAMPLE_TWIM, &packet_tx);
-}
 
 /**
  * \brief Application entry point for usart_serial example.
@@ -164,7 +100,7 @@ int main(void)
 	/* Initialize the SAM system. */
 	sysclk_init();
 	board_init();
-	init_twi();
+	//init_twi();
 	/* Configure UART for debug message output. */
 	configure_console();
 
@@ -173,23 +109,15 @@ int main(void)
 
 	puts("Start Scan...\n\r");
 	
-	addr = TARGET_ADDRESS;
-	/* Perform Write Test */
-	for(addr = 1; addr < 128; addr++)
+
+	if (STATUS_OK == OV7670_init())
 	{
-		status = write_test(addr);
-		/* Check status of transfer */
-		if (status == STATUS_OK) 
-		{
-			printf("Addr: %02x \tPASS\r\n", addr);
-		} 
-		else 
-		{
-			//puts("FAIL\n");
-			printf("Addr:%02x\tFAILED\r\n", addr);
-		}
+		printf("Initialise success\n\r");
 	}
-		
+	else
+	{
+		printf("Initialise fail\n\r");
+	}
 	while (1) {
 	}
 }
