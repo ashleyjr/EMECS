@@ -143,18 +143,20 @@ struct waveconfig_t {
 };
 
 #define  SERVO_FREQ		350
+#define CLOCK_DIV	2
+
 /** TC waveform configurations */
-static const struct waveconfig_t gc_waveconfig[] = {
-	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ,  0},
-	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 20},
-	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 30},
-	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 40},
-	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 50},
-	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 60},
-	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 70},
-	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 80},
-	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 90}
-};
+// static const struct waveconfig_t gc_waveconfig[] = {
+// 	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ,  0},
+// 	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 20},
+// 	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 30},
+// 	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 40},
+// 	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 50},
+// 	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 60},
+// 	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 70},
+// 	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 80},
+// 	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ, 90}
+// };
 
 #if (SAM4L)
 /* The first one is meaningless */
@@ -168,8 +170,8 @@ static const uint32_t divisors[5] = { 2, 8, 32, 128, 0};
 static uint8_t gs_uc_configuration = 0;
 
 /** Number of available wave configurations */
-const uint8_t gc_uc_nbconfig = sizeof(gc_waveconfig)
-		/ sizeof(struct waveconfig_t);
+// const uint8_t gc_uc_nbconfig = sizeof(gc_waveconfig)
+// 		/ sizeof(struct waveconfig_t);
 
 /** Capture status*/
 static uint32_t gs_ul_captured_pulses;
@@ -179,24 +181,24 @@ static uint32_t gs_ul_captured_rb;
 /**
  * \brief Display the user menu on the UART.
  */
-static void display_menu(void)
-{
-	uint8_t i;
-	puts("\n\rMenu :\n\r"
-			"------\n\r"
-			"  Output waveform property:\r");
-	for (i = 0; i < gc_uc_nbconfig; i++) {
-		printf("  %d: Set Frequency = %4u Hz, Duty Cycle = %2u%%\n\r", i,
-				(unsigned int)gc_waveconfig[i].us_frequency,
-				(unsigned int)gc_waveconfig[i].us_dutycycle);
-	}
-	printf("  -------------------------------------------\n\r"
-			"  c: Capture waveform from TC%d channel %d\n\r"
-			"  s: Stop capture and display captured informations \n\r"
-			"  h: Display menu \n\r"
-			//"------\n\r\r", TC_PERIPHERAL,TC_CHANNEL_CAPTURE
-			);
-}
+// static void display_menu(void)
+// {
+// 	uint8_t i;
+// 	puts("\n\rMenu :\n\r"
+// 			"------\n\r"
+// 			"  Output waveform property:\r");
+// 	for (i = 0; i < gc_uc_nbconfig; i++) {
+// 		printf("  %d: Set Frequency = %4u Hz, Duty Cycle = %2u%%\n\r", i,
+// 				(unsigned int)gc_waveconfig[i].us_frequency,
+// 				(unsigned int)gc_waveconfig[i].us_dutycycle);
+// 	}
+// 	printf("  -------------------------------------------\n\r"
+// 			"  c: Capture waveform from TC%d channel %d\n\r"
+// 			"  s: Stop capture and display captured informations \n\r"
+// 			"  h: Display menu \n\r"
+// 			//"------\n\r\r", TC_PERIPHERAL,TC_CHANNEL_CAPTURE
+// 			);
+// }
 
 /**
  * \brief Configure TC TC_CHANNEL_WAVEFORM in waveform operating mode.
@@ -241,7 +243,7 @@ static void tc_waveform_initialize(void)
 	tc_start(TC, TC_CHANNEL_WAVEFORMYAXIS);
 	
 }
-#define CLOCK_DIV	2
+
 
 void servo_move_xaxis(uint32_t dutycycle)
 {
@@ -343,15 +345,17 @@ int main(void)
 	dutycycle2 = 50;
 	servo_move_xaxis(dutycycle1);
 	servo_move_yaxis(dutycycle2);
+	servo_stop_xaxis();
+	servo_stop_yaxis();
 	/* Display menu */
-	display_menu();
+	//display_menu();
 
 	while (1) {
 		scanf("%c", (char *)&key);
 
 		switch (key) {
 		case 'h':
-			display_menu();
+			//display_menu();
 			break;
 		case 'a':
 			dutycycle1 += SERVO_STEP;
@@ -418,20 +422,20 @@ int main(void)
 					//delay_ms(500);
 			
 			break;
-		default:
-			/* Set waveform configuration #n */
-			if ((key >= '0') && (key <= ('0' + gc_uc_nbconfig - 1))) {
-				if (!gs_ul_captured_pulses) {
-					gs_uc_configuration = key - '0';
-					servo_move_xaxis(dutycycle1);
-					servo_move_yaxis(dutycycle2);
-					delay_ms(500);
-					servo_stop_xaxis();
-					servo_stop_yaxis();
-				} else {
-					printf("Capturing ... , press 's' to stop capture first \r");
-				}
-			}
+// 		default:
+// 			/* Set waveform configuration #n */
+// 			if ((key >= '0') && (key <= ('0' + gc_uc_nbconfig - 1))) {
+// 				if (!gs_ul_captured_pulses) {
+// 					gs_uc_configuration = key - '0';
+// 					servo_move_xaxis(dutycycle1);
+// 					servo_move_yaxis(dutycycle2);
+// 					delay_ms(500);
+// 					servo_stop_xaxis();
+// 					servo_stop_yaxis();
+// 				} else {
+// 					printf("Capturing ... , press 's' to stop capture first \r");
+// 				}
+// 			}
 			//else printf("Key 0x%02x pressed\n\r", key);
 //
 			//break;

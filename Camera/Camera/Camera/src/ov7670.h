@@ -88,10 +88,11 @@ volatile int VSYNC_Count;
 //////////////////////////////////////////////////////////////////////////
 unsigned char OV7670_init(void);						//Initialises Camera
 //unsigned char FIFO_init(void);							//Initialises Buffer
-static status_code_t  wrOV7670Reg(unsigned char regID, unsigned char regDat);	//Writes to a register
+//static status_code_t  wrOV7670Reg(unsigned char regID, unsigned char regDat);	//Writes to a register
 void LoadImageToBuffer( void );
 uint8_t GetImageIfAvailiable( int offset );
 uint16_t FIFO_TO_AVR(void);
+unsigned char FIFO_init(void);
 //unsigned char rdOV7670Reg(unsigned char regID, unsigned char *regDat);	//Reads a register
 // uint8_t GetImageIfAvailiable(int offset);				//Gets all pixel data if available
 // void LoadImageToBuffer(void);					//Loads an image into the FIFO Buffer

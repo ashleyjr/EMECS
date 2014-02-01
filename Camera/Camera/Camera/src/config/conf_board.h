@@ -77,5 +77,40 @@
 /** TWIM Interrupt Handler */
 #define EXAMPLE_TWIM_Handler TWIM0_Handler
 
+//pwm stuff
+
+#define TC             TC1
+#define TC_PERIPHERAL  1
+
+/** Configure TC1 channel 2 as waveform output. */
+#define TC_CHANNEL_WAVEFORM 2
+#define ID_TC_WAVEFORM       TC1
+#define PIN_TC_WAVEFORM      PIN_PC04D_TC1_A2
+#define PIN_TC_WAVEFORM_MUX  MUX_PC04D_TC1_A2
+
+/** Configure TC1 channel 1 as capture input. */
+#define TC_CHANNEL_WAVEFORMYAXIS  0
+#define ID_TC_WAVEFORM       TC1
+#define PIN_TC_WAVEFORMYAXIS     PIN_PC15A_TC1_A0
+#define PIN_TC_WAVEFORM_MUXYAXIS  MUX_PC15A_TC1_A0
+
+/** Use TC11_Handler for TC capture interrupt */
+#define TC_Handler  TC11_Handler
+#define TC_IRQn     TC11_IRQn
+
+
+#define  SERVO_FREQ		350
+#define CLOCK_DIV	2
+
+#define SERVO_STEP	5
+
+struct waveconfig_t {
+	/** Internal clock signals selection. */
+	uint32_t ul_intclock;
+	/** Waveform frequency (in Hz). */
+	uint16_t us_frequency;
+	/** Duty cycle in percent (positive).*/
+	uint16_t us_dutycycle;
+};
 
 #endif /* CONF_BOARD_H_INCLUDED */

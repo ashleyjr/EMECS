@@ -8,6 +8,8 @@ src\ASF\sam\drivers\events\events.c
 
 src\ASF\sam\drivers\gpio\gpio.c
 
+src\ASF\sam\drivers\tc\tc.c
+
 src\ov7670.c
 
 src\ASF\common\services\serial\usart_serial.c
