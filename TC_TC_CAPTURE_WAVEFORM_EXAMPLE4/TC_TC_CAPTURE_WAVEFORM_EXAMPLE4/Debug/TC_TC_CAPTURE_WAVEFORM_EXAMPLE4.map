@@ -4990,7 +4990,6 @@ Discarded input sections
                 0x00000000        0x1 src/tc_capture_waveform_example.o
  .rodata.gc_uc_nbconfig
                 0x00000000        0x1 src/tc_capture_waveform_example.o
- .debug_macro   0x00000000      0x838 src/tc_capture_waveform_example.o
  .debug_macro   0x00000000      0x16c src/tc_capture_waveform_example.o
  .debug_macro   0x00000000      0x2ee src/tc_capture_waveform_example.o
  .debug_macro   0x00000000       0x76 src/tc_capture_waveform_example.o
@@ -5311,7 +5310,7 @@ LOAD d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-
 LOAD d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtn.o
                 [0x00001000]                __stack_size__ = DEFINED (__stack_size__)?__stack_size__:0x1000
 
-.text           0x00000000     0x63b4
+.text           0x00000000     0x6380
                 0x00000000                . = ALIGN (0x4)
                 0x00000000                _sfixed = .
  *(.vectors .vectors.*)
@@ -5562,279 +5561,279 @@ LOAD d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-
  .text.servo_move_yaxis
                 0x0000226c       0x7c src/tc_capture_waveform_example.o
                 0x0000226c                servo_move_yaxis
- .text.main     0x000022e8      0x340 src/tc_capture_waveform_example.o
+ .text.main     0x000022e8      0x32c src/tc_capture_waveform_example.o
                 0x000022e8                main
- .text          0x00002628       0x9c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__atexit.o)
-                0x00002628                __register_exitproc
- .text          0x000026c4       0x2c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fini.o)
-                0x000026c4                __libc_fini_array
- .text          0x000026f0       0x4c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-init.o)
-                0x000026f0                __libc_init_array
- .text          0x0000273c       0x40 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iprintf.o)
-                0x0000273c                iprintf
-                0x00002760                _iprintf_r
- .text          0x0000277c       0x10 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memset.o)
-                0x0000277c                memset
- .text          0x0000278c       0x74 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-puts.o)
-                0x0000278c                _puts_r
-                0x000027f0                puts
- .text          0x00002800       0x40 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-scanf.o)
-                0x00002800                scanf
-                0x00002824                _scanf_r
- .text          0x00002840       0x10 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setbuf.o)
-                0x00002840                setbuf
- .text          0x00002850       0xec d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setvbuf.o)
-                0x00002850                setvbuf
- .text          0x0000293c       0x10 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strlen.o)
-                0x0000293c                strlen
- .text          0x0000294c      0x918 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
-                0x0000294c                __sprint_r
-                0x000029b4                _vfiprintf_r
-                0x00003246                vfiprintf
- .text          0x00003264      0x81c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfscanf.o)
-                0x00003264                __svfscanf_r
-                0x00003a10                _vfscanf_r
-                0x00003a36                __svfscanf
-                0x00003a54                vfscanf
- .text          0x00003a80       0xb8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wsetup.o)
-                0x00003a80                __swsetup_r
- .text.startup  0x00003b38       0x14 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__call_atexit.o)
- .text          0x00003b4c        0xc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-atexit.o)
-                0x00003b4c                atexit
- .text          0x00003b58      0x154 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fflush.o)
-                0x00003b58                _fflush_r
-                0x00003c88                fflush
- .text          0x00003cac      0x18c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-findfp.o)
-                0x00003cb4                _cleanup_r
-                0x00003d08                __sfmoreglue
-                0x00003d32                _cleanup
-                0x00003d40                __sinit
-                0x00003d8c                __sfp
-                0x00003e08                __sfp_lock_acquire
-                0x00003e0a                __sfp_lock_release
-                0x00003e0c                __sinit_lock_acquire
-                0x00003e0e                __sinit_lock_release
-                0x00003e10                __fp_lock_all
-                0x00003e24                __fp_unlock_all
- .text          0x00003e38       0xe8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fputwc.o)
-                0x00003e38                _fputwc_r
-                0x00003ef8                fputwc
- .text          0x00003f20       0xbc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fread.o)
-                0x00003f20                _fread_r
-                0x00003fbc                fread
- .text          0x00003fdc      0x208 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-freer.o)
-                0x00003fdc                _malloc_trim_r
-                0x00004078                _free_r
- .text          0x000041e4      0x2b6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fvwrite.o)
-                0x000041e4                __sfvwrite_r
- .text          0x0000449a       0x86 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fwalk.o)
-                0x0000449a                _fwalk
-                0x000044dc                _fwalk_reent
- .text          0x00004520       0x1c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iswspace.o)
-                0x00004520                iswspace
- .text          0x0000453c       0x88 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-locale.o)
-                0x0000453c                _setlocale_r
-                0x00004580                __locale_charset
-                0x00004588                __locale_mb_cur_max
-                0x00004594                __locale_msgcharset
-                0x0000459c                __locale_cjk_lang
-                0x000045a0                _localeconv_r
-                0x000045a8                setlocale
-                0x000045bc                localeconv
- .text          0x000045c4       0xd8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-makebuf.o)
-                0x000045c4                __smakebuf_r
- .text          0x0000469c       0x20 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-malloc.o)
-                0x0000469c                malloc
-                0x000046ac                free
- .text          0x000046bc      0x404 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mallocr.o)
-                0x000046bc                _malloc_r
- .text          0x00004ac0       0x70 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbrtowc.o)
-                0x00004ac0                _mbrtowc_r
-                0x00004b10                mbrtowc
- .text          0x00004b30       0x50 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbtowc_r.o)
-                0x00004b30                __ascii_mbtowc
-                0x00004b54                _mbtowc_r
- .text          0x00004b80       0x1c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memchr.o)
-                0x00004b80                memchr
- .text          0x00004b9c       0x12 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memcpy.o)
-                0x00004b9c                memcpy
- .text          0x00004bae       0x34 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memmove.o)
-                0x00004bae                memmove
- .text          0x00004be2        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mlock.o)
-                0x00004be2                __malloc_lock
-                0x00004be4                __malloc_unlock
- *fill*         0x00004be6        0x2 00
- .text          0x00004be8      0x2dc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reallocr.o)
-                0x00004be8                _realloc_r
- .text          0x00004ec4      0x104 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-refill.o)
-                0x00004ed6                __srefill_r
- .text          0x00004fc8       0x20 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sbrkr.o)
-                0x00004fc8                _sbrk_r
- .text          0x00004fe8       0x60 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sccl.o)
-                0x00004fe8                __sccl
- .text          0x00005048       0x8e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-stdio.o)
-                0x00005048                __sread
-                0x0000506a                __seofread
-                0x0000506e                __swrite
-                0x000050aa                __sseek
-                0x000050ce                __sclose
- .text          0x000050d6       0x16 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strcmp.o)
-                0x000050d6                strcmp
- .text          0x000050ec      0x128 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtol.o)
-                0x000050ec                _strtol_r
-                0x000051f8                strtol
- .text          0x00005214      0x190 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoll_r.o)
-                0x00005214                _strtoll_r
- .text          0x000053a4      0x118 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoul.o)
-                0x000053a4                _strtoul_r
-                0x000054a0                strtoul
- .text          0x000054bc      0x160 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoull_r.o)
-                0x000054bc                _strtoull_r
- .text          0x0000561c      0x164 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ungetc.o)
-                0x0000561c                __submore
-                0x00005692                _ungetc_r
-                0x0000576e                ungetc
- .text          0x00005780       0xb4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wbuf.o)
-                0x00005780                __swbuf_r
-                0x00005822                __swbuf
- .text          0x00005834       0x68 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wcrtomb.o)
-                0x00005834                _wcrtomb_r
-                0x00005880                wcrtomb
- .text          0x0000589c       0x44 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wctomb_r.o)
-                0x0000589c                __ascii_wctomb
-                0x000058b6                _wctomb_r
- .text          0x000058e0       0x24 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-writer.o)
-                0x000058e0                _write_r
- .text          0x00005904       0x20 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-closer.o)
-                0x00005904                _close_r
- .text          0x00005924       0x94 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fclose.o)
-                0x00005924                _fclose_r
-                0x000059a8                fclose
- .text          0x000059b8       0x24 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fstatr.o)
-                0x000059b8                _fstat_r
- .text          0x000059dc       0x20 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-isattyr.o)
-                0x000059dc                _isatty_r
- .text          0x000059fc       0x24 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-lseekr.o)
-                0x000059fc                _lseek_r
- .text          0x00005a20       0x24 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-readr.o)
-                0x00005a20                _read_r
- .text          0x00005a44       0x2c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_aeabi_uldivmod.o)
-                0x00005a44                __aeabi_uldivmod
- .text          0x00005a70       0x58 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(bpabi.o)
-                0x00005a70                __gnu_ldivmod_helper
-                0x00005a9c                __gnu_uldivmod_helper
- .text          0x00005ac8        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_dvmd_tls.o)
-                0x00005ac8                __aeabi_idiv0
-                0x00005ac8                __aeabi_ldiv0
- .text          0x00005acc      0x2bc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_divdi3.o)
-                0x00005acc                __divdi3
- .text          0x00005d88      0x288 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_udivdi3.o)
-                0x00005d88                __udivdi3
+ .text          0x00002614       0x9c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__atexit.o)
+                0x00002614                __register_exitproc
+ .text          0x000026b0       0x2c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fini.o)
+                0x000026b0                __libc_fini_array
+ .text          0x000026dc       0x4c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-init.o)
+                0x000026dc                __libc_init_array
+ .text          0x00002728       0x40 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iprintf.o)
+                0x00002728                iprintf
+                0x0000274c                _iprintf_r
+ .text          0x00002768       0x10 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memset.o)
+                0x00002768                memset
+ .text          0x00002778       0x74 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-puts.o)
+                0x00002778                _puts_r
+                0x000027dc                puts
+ .text          0x000027ec       0x40 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-scanf.o)
+                0x000027ec                scanf
+                0x00002810                _scanf_r
+ .text          0x0000282c       0x10 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setbuf.o)
+                0x0000282c                setbuf
+ .text          0x0000283c       0xec d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setvbuf.o)
+                0x0000283c                setvbuf
+ .text          0x00002928       0x10 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strlen.o)
+                0x00002928                strlen
+ .text          0x00002938      0x918 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
+                0x00002938                __sprint_r
+                0x000029a0                _vfiprintf_r
+                0x00003232                vfiprintf
+ .text          0x00003250      0x81c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfscanf.o)
+                0x00003250                __svfscanf_r
+                0x000039fc                _vfscanf_r
+                0x00003a22                __svfscanf
+                0x00003a40                vfscanf
+ .text          0x00003a6c       0xb8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wsetup.o)
+                0x00003a6c                __swsetup_r
+ .text.startup  0x00003b24       0x14 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__call_atexit.o)
+ .text          0x00003b38        0xc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-atexit.o)
+                0x00003b38                atexit
+ .text          0x00003b44      0x154 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fflush.o)
+                0x00003b44                _fflush_r
+                0x00003c74                fflush
+ .text          0x00003c98      0x18c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-findfp.o)
+                0x00003ca0                _cleanup_r
+                0x00003cf4                __sfmoreglue
+                0x00003d1e                _cleanup
+                0x00003d2c                __sinit
+                0x00003d78                __sfp
+                0x00003df4                __sfp_lock_acquire
+                0x00003df6                __sfp_lock_release
+                0x00003df8                __sinit_lock_acquire
+                0x00003dfa                __sinit_lock_release
+                0x00003dfc                __fp_lock_all
+                0x00003e10                __fp_unlock_all
+ .text          0x00003e24       0xe8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fputwc.o)
+                0x00003e24                _fputwc_r
+                0x00003ee4                fputwc
+ .text          0x00003f0c       0xbc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fread.o)
+                0x00003f0c                _fread_r
+                0x00003fa8                fread
+ .text          0x00003fc8      0x208 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-freer.o)
+                0x00003fc8                _malloc_trim_r
+                0x00004064                _free_r
+ .text          0x000041d0      0x2b6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fvwrite.o)
+                0x000041d0                __sfvwrite_r
+ .text          0x00004486       0x86 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fwalk.o)
+                0x00004486                _fwalk
+                0x000044c8                _fwalk_reent
+ .text          0x0000450c       0x1c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iswspace.o)
+                0x0000450c                iswspace
+ .text          0x00004528       0x88 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-locale.o)
+                0x00004528                _setlocale_r
+                0x0000456c                __locale_charset
+                0x00004574                __locale_mb_cur_max
+                0x00004580                __locale_msgcharset
+                0x00004588                __locale_cjk_lang
+                0x0000458c                _localeconv_r
+                0x00004594                setlocale
+                0x000045a8                localeconv
+ .text          0x000045b0       0xd8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-makebuf.o)
+                0x000045b0                __smakebuf_r
+ .text          0x00004688       0x20 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-malloc.o)
+                0x00004688                malloc
+                0x00004698                free
+ .text          0x000046a8      0x404 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mallocr.o)
+                0x000046a8                _malloc_r
+ .text          0x00004aac       0x70 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbrtowc.o)
+                0x00004aac                _mbrtowc_r
+                0x00004afc                mbrtowc
+ .text          0x00004b1c       0x50 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbtowc_r.o)
+                0x00004b1c                __ascii_mbtowc
+                0x00004b40                _mbtowc_r
+ .text          0x00004b6c       0x1c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memchr.o)
+                0x00004b6c                memchr
+ .text          0x00004b88       0x12 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memcpy.o)
+                0x00004b88                memcpy
+ .text          0x00004b9a       0x34 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memmove.o)
+                0x00004b9a                memmove
+ .text          0x00004bce        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mlock.o)
+                0x00004bce                __malloc_lock
+                0x00004bd0                __malloc_unlock
+ *fill*         0x00004bd2        0x2 00
+ .text          0x00004bd4      0x2dc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reallocr.o)
+                0x00004bd4                _realloc_r
+ .text          0x00004eb0      0x104 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-refill.o)
+                0x00004ec2                __srefill_r
+ .text          0x00004fb4       0x20 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sbrkr.o)
+                0x00004fb4                _sbrk_r
+ .text          0x00004fd4       0x60 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sccl.o)
+                0x00004fd4                __sccl
+ .text          0x00005034       0x8e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-stdio.o)
+                0x00005034                __sread
+                0x00005056                __seofread
+                0x0000505a                __swrite
+                0x00005096                __sseek
+                0x000050ba                __sclose
+ .text          0x000050c2       0x16 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strcmp.o)
+                0x000050c2                strcmp
+ .text          0x000050d8      0x128 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtol.o)
+                0x000050d8                _strtol_r
+                0x000051e4                strtol
+ .text          0x00005200      0x190 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoll_r.o)
+                0x00005200                _strtoll_r
+ .text          0x00005390      0x118 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoul.o)
+                0x00005390                _strtoul_r
+                0x0000548c                strtoul
+ .text          0x000054a8      0x160 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoull_r.o)
+                0x000054a8                _strtoull_r
+ .text          0x00005608      0x164 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ungetc.o)
+                0x00005608                __submore
+                0x0000567e                _ungetc_r
+                0x0000575a                ungetc
+ .text          0x0000576c       0xb4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wbuf.o)
+                0x0000576c                __swbuf_r
+                0x0000580e                __swbuf
+ .text          0x00005820       0x68 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wcrtomb.o)
+                0x00005820                _wcrtomb_r
+                0x0000586c                wcrtomb
+ .text          0x00005888       0x44 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wctomb_r.o)
+                0x00005888                __ascii_wctomb
+                0x000058a2                _wctomb_r
+ .text          0x000058cc       0x24 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-writer.o)
+                0x000058cc                _write_r
+ .text          0x000058f0       0x20 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-closer.o)
+                0x000058f0                _close_r
+ .text          0x00005910       0x94 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fclose.o)
+                0x00005910                _fclose_r
+                0x00005994                fclose
+ .text          0x000059a4       0x24 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fstatr.o)
+                0x000059a4                _fstat_r
+ .text          0x000059c8       0x20 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-isattyr.o)
+                0x000059c8                _isatty_r
+ .text          0x000059e8       0x24 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-lseekr.o)
+                0x000059e8                _lseek_r
+ .text          0x00005a0c       0x24 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-readr.o)
+                0x00005a0c                _read_r
+ .text          0x00005a30       0x2c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_aeabi_uldivmod.o)
+                0x00005a30                __aeabi_uldivmod
+ .text          0x00005a5c       0x58 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(bpabi.o)
+                0x00005a5c                __gnu_ldivmod_helper
+                0x00005a88                __gnu_uldivmod_helper
+ .text          0x00005ab4        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_dvmd_tls.o)
+                0x00005ab4                __aeabi_idiv0
+                0x00005ab4                __aeabi_ldiv0
+ .text          0x00005ab8      0x2bc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_divdi3.o)
+                0x00005ab8                __divdi3
+ .text          0x00005d74      0x288 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_udivdi3.o)
+                0x00005d74                __udivdi3
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
  .rodata.str1.4
-                0x00006010      0x208 src/tc_capture_waveform_example.o
- .rodata        0x00006218        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-impure.o)
-                0x00006218                _global_impure_ptr
+                0x00005ffc      0x1e8 src/tc_capture_waveform_example.o
+ .rodata        0x000061e4        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-impure.o)
+                0x000061e4                _global_impure_ptr
  .rodata.str1.1
-                0x0000621c        0x2 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-impure.o)
+                0x000061e8        0x2 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-impure.o)
  .rodata.str1.1
-                0x0000621e        0x2 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-puts.o)
- .rodata        0x00006220       0x20 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
+                0x000061ea        0x2 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-puts.o)
+ .rodata        0x000061ec       0x20 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
  .rodata.str1.1
-                0x00006240       0x22 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
- .rodata        0x00006262       0x22 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfscanf.o)
- .rodata        0x00006284      0x101 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ctype_.o)
-                0x00006284                _ctype_
+                0x0000620c       0x22 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
+ .rodata        0x0000622e       0x22 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfscanf.o)
+ .rodata        0x00006250      0x101 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ctype_.o)
+                0x00006250                _ctype_
  .rodata.str1.1
-                0x00006385        0x8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-locale.o)
+                0x00006351        0x8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-locale.o)
                                   0xb (size before relaxing)
  .rodata.str1.1
                 0x00000000        0x1 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbrtowc.o)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00006390                . = ALIGN (0x4)
- *fill*         0x0000638d        0x3 00
+                0x0000635c                . = ALIGN (0x4)
+ *fill*         0x00006359        0x3 00
  *(.init)
- .init          0x00006390        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crti.o
-                0x00006390                _init
- .init          0x00006394        0x8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtn.o
-                0x0000639c                . = ALIGN (0x4)
-                0x0000639c                __preinit_array_start = .
+ .init          0x0000635c        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crti.o
+                0x0000635c                _init
+ .init          0x00006360        0x8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtn.o
+                0x00006368                . = ALIGN (0x4)
+                0x00006368                __preinit_array_start = .
  *(.preinit_array)
-                0x0000639c                __preinit_array_end = .
-                0x0000639c                . = ALIGN (0x4)
-                0x0000639c                __init_array_start = .
+                0x00006368                __preinit_array_end = .
+                0x00006368                . = ALIGN (0x4)
+                0x00006368                __init_array_start = .
  *(SORT(.init_array.*))
  .init_array.00000
-                0x0000639c        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__call_atexit.o)
+                0x00006368        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__call_atexit.o)
  *(.init_array)
- .init_array    0x000063a0        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
-                0x000063a4                __init_array_end = .
-                0x000063a4                . = ALIGN (0x4)
+ .init_array    0x0000636c        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
+                0x00006370                __init_array_end = .
+                0x00006370                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x000063a4                . = ALIGN (0x4)
+                0x00006370                . = ALIGN (0x4)
  *(.fini)
- .fini          0x000063a4        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crti.o
-                0x000063a4                _fini
- .fini          0x000063a8        0x8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtn.o
-                0x000063b0                . = ALIGN (0x4)
-                0x000063b0                __fini_array_start = .
+ .fini          0x00006370        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crti.o
+                0x00006370                _fini
+ .fini          0x00006374        0x8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtn.o
+                0x0000637c                . = ALIGN (0x4)
+                0x0000637c                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x000063b0        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
+ .fini_array    0x0000637c        0x4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x000063b4                __fini_array_end = .
+                0x00006380                __fini_array_end = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x000063b4                . = ALIGN (0x4)
-                0x000063b4                _efixed = .
-                0x000063b4                PROVIDE (__exidx_start, .)
+                0x00006380                . = ALIGN (0x4)
+                0x00006380                _efixed = .
+                0x00006380                PROVIDE (__exidx_start, .)
 
-.vfp11_veneer   0x000063b4        0x0
+.vfp11_veneer   0x00006380        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x000063b4        0x0
+.v4_bx          0x00006380        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x000063b4        0x0
+.iplt           0x00006380        0x0
  .iplt          0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
 
-.ARM.exidx      0x000063b4        0x8
+.ARM.exidx      0x00006380        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x000063b4        0x8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_divdi3.o)
- .ARM.exidx     0x000063bc        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x00006380        0x8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x00006388        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_udivdi3.o)
                                   0x8 (size before relaxing)
-                0x000063bc                PROVIDE (__exidx_end, .)
+                0x00006388                PROVIDE (__exidx_end, .)
 
-.eh_frame       0x000063bc        0x0
- .eh_frame      0x000063bc        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
+.eh_frame       0x00006388        0x0
+ .eh_frame      0x00006388        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
 
-.rel.dyn        0x000063bc        0x0
+.rel.dyn        0x00006388        0x0
  .rel.iplt      0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
 
-.jcr            0x000063bc        0x0
- .jcr           0x000063bc        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
+.jcr            0x00006388        0x0
+ .jcr           0x00006388        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
 
 .tm_clone_table
-                0x000063bc        0x0
+                0x00006388        0x0
  .tm_clone_table
-                0x000063bc        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
+                0x00006388        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
  .tm_clone_table
-                0x000063bc        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtend.o
+                0x00006388        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtend.o
 
-.igot.plt       0x000063bc        0x0
+.igot.plt       0x00006388        0x0
  .igot.plt      0x00000000        0x0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtbegin.o
-                0x000063bc                . = ALIGN (0x4)
-                0x000063bc                _etext = .
+                0x00006388                . = ALIGN (0x4)
+                0x00006388                _etext = .
 
-.relocate       0x20000000      0x918 load address 0x000063bc
+.relocate       0x20000000      0x918 load address 0x00006388
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _srelocate = .
  *(.ramfunc .ramfunc.*)
@@ -5868,7 +5867,7 @@ LOAD d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-
                 0x20000918                . = ALIGN (0x4)
                 0x20000918                _erelocate = .
 
-.bss            0x20000918       0x70 load address 0x00006cd4
+.bss            0x20000918       0x70 load address 0x00006ca0
                 0x20000918                . = ALIGN (0x4)
                 0x20000918                _sbss = .
                 0x20000918                _szero = .
@@ -5900,7 +5899,7 @@ LOAD d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-
                 0x20000988                _ebss = .
                 0x20000988                _ezero = .
 
-.stack          0x20000988     0x1000 load address 0x00006d44
+.stack          0x20000988     0x1000 load address 0x00006d10
                 0x20000988                . = ALIGN (0x8)
                 0x20000988                _sstack = .
                 0x20001988                . = (. + __stack_size__)
@@ -6159,7 +6158,7 @@ OUTPUT(TC_TC_CAPTURE_WAVEFORM_EXAMPLE4.elf elf32-littlearm)
  .comment       0x00000000       0x72 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_udivdi3.o)
  .comment       0x00000000       0x72 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/crtend.o
 
-.debug_info     0x00000000    0x2ea79
+.debug_info     0x00000000    0x2ea6a
  .debug_info    0x00000000      0x11e src/ASF/common/services/delay/sam/cycle_counter.o
  .debug_info    0x0000011e     0x117c src/ASF/common/services/clock/sam4l/osc.o
  .debug_info    0x0000129a     0x27db src/ASF/common/services/clock/sam4l/sysclk.o
@@ -6175,69 +6174,69 @@ OUTPUT(TC_TC_CAPTURE_WAVEFORM_EXAMPLE4.elf elf32-littlearm)
  .debug_info    0x0000a798       0xaf src/ASF/sam/utils/cmsis/sam4l/source/templates/exceptions.o
  .debug_info    0x0000a847      0x347 src/ASF/sam/utils/cmsis/sam4l/source/templates/gcc/startup_sam4l.o
  .debug_info    0x0000ab8e      0x427 src/ASF/sam/utils/syscalls/gcc/syscalls.o
- .debug_info    0x0000afb5     0x228b src/tc_capture_waveform_example.o
- .debug_info    0x0000d240      0xa15 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__atexit.o)
- .debug_info    0x0000dc55       0xf7 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fini.o)
- .debug_info    0x0000dd4c      0x961 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-impure.o)
- .debug_info    0x0000e6ad      0x110 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-init.o)
- .debug_info    0x0000e7bd      0xa8d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iprintf.o)
- .debug_info    0x0000f24a       0xd3 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memset.o)
- .debug_info    0x0000f31d      0xae4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-puts.o)
- .debug_info    0x0000fe01      0xa7c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-scanf.o)
- .debug_info    0x0001087d      0x9d7 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setbuf.o)
- .debug_info    0x00011254      0xa79 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setvbuf.o)
- .debug_info    0x00011ccd       0xcd d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strlen.o)
- .debug_info    0x00011d9a     0x129d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
- .debug_info    0x00013037     0x1310 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfscanf.o)
- .debug_info    0x00014347      0xa01 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wsetup.o)
- .debug_info    0x00014d48      0xa7c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__call_atexit.o)
- .debug_info    0x000157c4      0x10f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-atexit.o)
- .debug_info    0x000158d3       0x6d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ctype_.o)
- .debug_info    0x00015940      0xb2b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fflush.o)
- .debug_info    0x0001646b      0xdbc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-findfp.o)
- .debug_info    0x00017227      0xb7b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fputwc.o)
- .debug_info    0x00017da2      0xb5f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fread.o)
- .debug_info    0x00018901      0xd0f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-freer.o)
- .debug_info    0x00019610      0xd8f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fvwrite.o)
- .debug_info    0x0001a39f      0xb9d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fwalk.o)
- .debug_info    0x0001af3c       0xc5 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iswspace.o)
- .debug_info    0x0001b001      0xd0f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-locale.o)
- .debug_info    0x0001bd10      0xbea d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-makebuf.o)
- .debug_info    0x0001c8fa      0x9f2 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-malloc.o)
- .debug_info    0x0001d2ec      0xe25 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mallocr.o)
- .debug_info    0x0001e111      0xab6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbrtowc.o)
- .debug_info    0x0001ebc7      0xaca d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbtowc_r.o)
- .debug_info    0x0001f691       0xf9 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memchr.o)
- .debug_info    0x0001f78a      0x103 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memcpy.o)
- .debug_info    0x0001f88d      0x103 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memmove.o)
- .debug_info    0x0001f990      0x985 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mlock.o)
- .debug_info    0x00020315      0xd3c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reallocr.o)
- .debug_info    0x00021051      0xafb d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-refill.o)
- .debug_info    0x00021b4c      0x9cc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sbrkr.o)
- .debug_info    0x00022518      0x100 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sccl.o)
- .debug_info    0x00022618      0xc7b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-stdio.o)
- .debug_info    0x00023293       0xb5 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strcmp.o)
- .debug_info    0x00023348      0xa7f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtol.o)
- .debug_info    0x00023dc7      0xa0b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoll_r.o)
- .debug_info    0x000247d2      0xa7f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoul.o)
- .debug_info    0x00025251      0xa0b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoull_r.o)
- .debug_info    0x00025c5c      0xb73 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ungetc.o)
- .debug_info    0x000267cf      0xaa2 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wbuf.o)
- .debug_info    0x00027271      0xaa8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wcrtomb.o)
- .debug_info    0x00027d19      0xa92 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wctomb_r.o)
- .debug_info    0x000287ab      0x9ff d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-writer.o)
- .debug_info    0x000291aa      0x9b6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-closer.o)
- .debug_info    0x00029b60      0xac3 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fclose.o)
- .debug_info    0x0002a623      0xb61 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fstatr.o)
- .debug_info    0x0002b184      0x9b6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-isattyr.o)
- .debug_info    0x0002bb3a      0x9ed d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-lseekr.o)
- .debug_info    0x0002c527      0x9f8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-readr.o)
- .debug_info    0x0002cf1f      0xb23 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reent.o)
- .debug_info    0x0002da42       0xfe d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_aeabi_uldivmod.o)
- .debug_info    0x0002db40      0x170 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(bpabi.o)
- .debug_info    0x0002dcb0      0x102 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_dvmd_tls.o)
- .debug_info    0x0002ddb2      0x682 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_divdi3.o)
- .debug_info    0x0002e434      0x645 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_udivdi3.o)
+ .debug_info    0x0000afb5     0x227c src/tc_capture_waveform_example.o
+ .debug_info    0x0000d231      0xa15 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__atexit.o)
+ .debug_info    0x0000dc46       0xf7 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fini.o)
+ .debug_info    0x0000dd3d      0x961 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-impure.o)
+ .debug_info    0x0000e69e      0x110 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-init.o)
+ .debug_info    0x0000e7ae      0xa8d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iprintf.o)
+ .debug_info    0x0000f23b       0xd3 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memset.o)
+ .debug_info    0x0000f30e      0xae4 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-puts.o)
+ .debug_info    0x0000fdf2      0xa7c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-scanf.o)
+ .debug_info    0x0001086e      0x9d7 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setbuf.o)
+ .debug_info    0x00011245      0xa79 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setvbuf.o)
+ .debug_info    0x00011cbe       0xcd d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strlen.o)
+ .debug_info    0x00011d8b     0x129d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
+ .debug_info    0x00013028     0x1310 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfscanf.o)
+ .debug_info    0x00014338      0xa01 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wsetup.o)
+ .debug_info    0x00014d39      0xa7c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x000157b5      0x10f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-atexit.o)
+ .debug_info    0x000158c4       0x6d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ctype_.o)
+ .debug_info    0x00015931      0xb2b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fflush.o)
+ .debug_info    0x0001645c      0xdbc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-findfp.o)
+ .debug_info    0x00017218      0xb7b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fputwc.o)
+ .debug_info    0x00017d93      0xb5f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fread.o)
+ .debug_info    0x000188f2      0xd0f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-freer.o)
+ .debug_info    0x00019601      0xd8f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fvwrite.o)
+ .debug_info    0x0001a390      0xb9d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fwalk.o)
+ .debug_info    0x0001af2d       0xc5 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iswspace.o)
+ .debug_info    0x0001aff2      0xd0f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-locale.o)
+ .debug_info    0x0001bd01      0xbea d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-makebuf.o)
+ .debug_info    0x0001c8eb      0x9f2 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-malloc.o)
+ .debug_info    0x0001d2dd      0xe25 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mallocr.o)
+ .debug_info    0x0001e102      0xab6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbrtowc.o)
+ .debug_info    0x0001ebb8      0xaca d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbtowc_r.o)
+ .debug_info    0x0001f682       0xf9 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memchr.o)
+ .debug_info    0x0001f77b      0x103 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memcpy.o)
+ .debug_info    0x0001f87e      0x103 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memmove.o)
+ .debug_info    0x0001f981      0x985 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mlock.o)
+ .debug_info    0x00020306      0xd3c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reallocr.o)
+ .debug_info    0x00021042      0xafb d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-refill.o)
+ .debug_info    0x00021b3d      0x9cc d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sbrkr.o)
+ .debug_info    0x00022509      0x100 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sccl.o)
+ .debug_info    0x00022609      0xc7b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-stdio.o)
+ .debug_info    0x00023284       0xb5 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strcmp.o)
+ .debug_info    0x00023339      0xa7f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtol.o)
+ .debug_info    0x00023db8      0xa0b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoll_r.o)
+ .debug_info    0x000247c3      0xa7f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoul.o)
+ .debug_info    0x00025242      0xa0b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoull_r.o)
+ .debug_info    0x00025c4d      0xb73 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ungetc.o)
+ .debug_info    0x000267c0      0xaa2 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wbuf.o)
+ .debug_info    0x00027262      0xaa8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wcrtomb.o)
+ .debug_info    0x00027d0a      0xa92 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wctomb_r.o)
+ .debug_info    0x0002879c      0x9ff d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-writer.o)
+ .debug_info    0x0002919b      0x9b6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-closer.o)
+ .debug_info    0x00029b51      0xac3 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fclose.o)
+ .debug_info    0x0002a614      0xb61 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fstatr.o)
+ .debug_info    0x0002b175      0x9b6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-isattyr.o)
+ .debug_info    0x0002bb2b      0x9ed d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-lseekr.o)
+ .debug_info    0x0002c518      0x9f8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-readr.o)
+ .debug_info    0x0002cf10      0xb23 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reent.o)
+ .debug_info    0x0002da33       0xfe d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x0002db31      0x170 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(bpabi.o)
+ .debug_info    0x0002dca1      0x102 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_dvmd_tls.o)
+ .debug_info    0x0002dda3      0x682 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_divdi3.o)
+ .debug_info    0x0002e425      0x645 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_udivdi3.o)
 
 .debug_abbrev   0x00000000     0x87ca
  .debug_abbrev  0x00000000       0x9d src/ASF/common/services/delay/sam/cycle_counter.o
@@ -6501,7 +6500,7 @@ OUTPUT(TC_TC_CAPTURE_WAVEFORM_EXAMPLE4.elf elf32-littlearm)
  .debug_ranges  0x00000998      0x138 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_divdi3.o)
  .debug_ranges  0x00000ad0      0x128 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_udivdi3.o)
 
-.debug_macro    0x00000000    0x2ddda
+.debug_macro    0x00000000    0x2e611
  .debug_macro   0x00000000      0x537 src/ASF/common/services/delay/sam/cycle_counter.o
  .debug_macro   0x00000537      0x838 src/ASF/common/services/delay/sam/cycle_counter.o
  .debug_macro   0x00000d6f      0x16c src/ASF/common/services/delay/sam/cycle_counter.o
@@ -6654,13 +6653,14 @@ OUTPUT(TC_TC_CAPTURE_WAVEFORM_EXAMPLE4.elf elf32-littlearm)
  .debug_macro   0x0002d4bf       0x16 src/ASF/sam/utils/syscalls/gcc/syscalls.o
  .debug_macro   0x0002d4d5       0x34 src/ASF/sam/utils/syscalls/gcc/syscalls.o
  .debug_macro   0x0002d509      0x120 src/ASF/sam/utils/syscalls/gcc/syscalls.o
- .debug_macro   0x0002d629      0x6b7 src/tc_capture_waveform_example.o
- .debug_macro   0x0002dce0       0x28 src/tc_capture_waveform_example.o
- .debug_macro   0x0002dd08       0x22 src/tc_capture_waveform_example.o
- .debug_macro   0x0002dd2a       0x94 src/tc_capture_waveform_example.o
- .debug_macro   0x0002ddbe       0x1c src/tc_capture_waveform_example.o
+ .debug_macro   0x0002d629      0x6b0 src/tc_capture_waveform_example.o
+ .debug_macro   0x0002dcd9      0x83e src/tc_capture_waveform_example.o
+ .debug_macro   0x0002e517       0x28 src/tc_capture_waveform_example.o
+ .debug_macro   0x0002e53f       0x22 src/tc_capture_waveform_example.o
+ .debug_macro   0x0002e561       0x94 src/tc_capture_waveform_example.o
+ .debug_macro   0x0002e5f5       0x1c src/tc_capture_waveform_example.o
 
-.debug_line     0x00000000    0x16583
+.debug_line     0x00000000    0x1657f
  .debug_line    0x00000000      0xcad src/ASF/common/services/delay/sam/cycle_counter.o
  .debug_line    0x00000cad     0x1030 src/ASF/common/services/clock/sam4l/osc.o
  .debug_line    0x00001cdd     0x124e src/ASF/common/services/clock/sam4l/sysclk.o
@@ -6676,71 +6676,71 @@ OUTPUT(TC_TC_CAPTURE_WAVEFORM_EXAMPLE4.elf elf32-littlearm)
  .debug_line    0x0000b821      0xab9 src/ASF/sam/utils/cmsis/sam4l/source/templates/exceptions.o
  .debug_line    0x0000c2da      0xb18 src/ASF/sam/utils/cmsis/sam4l/source/templates/gcc/startup_sam4l.o
  .debug_line    0x0000cdf2      0x434 src/ASF/sam/utils/syscalls/gcc/syscalls.o
- .debug_line    0x0000d226     0x11a8 src/tc_capture_waveform_example.o
- .debug_line    0x0000e3ce      0x231 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__atexit.o)
- .debug_line    0x0000e5ff      0x124 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fini.o)
- .debug_line    0x0000e723      0x183 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-impure.o)
- .debug_line    0x0000e8a6      0x136 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-init.o)
- .debug_line    0x0000e9dc      0x225 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iprintf.o)
- .debug_line    0x0000ec01      0x18d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memset.o)
- .debug_line    0x0000ed8e      0x238 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-puts.o)
- .debug_line    0x0000efc6      0x23c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-scanf.o)
- .debug_line    0x0000f202      0x1fd d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setbuf.o)
- .debug_line    0x0000f3ff      0x276 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setvbuf.o)
- .debug_line    0x0000f675      0x184 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strlen.o)
- .debug_line    0x0000f7f9      0x5fe d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
- .debug_line    0x0000fdf7      0x4be d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfscanf.o)
- .debug_line    0x000102b5      0x25c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wsetup.o)
- .debug_line    0x00010511      0x275 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__call_atexit.o)
- .debug_line    0x00010786      0x10b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-atexit.o)
- .debug_line    0x00010891       0x84 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ctype_.o)
- .debug_line    0x00010915      0x2bd d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fflush.o)
- .debug_line    0x00010bd2      0x2bb d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-findfp.o)
- .debug_line    0x00010e8d      0x251 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fputwc.o)
- .debug_line    0x000110de      0x276 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fread.o)
- .debug_line    0x00011354      0x2c0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-freer.o)
- .debug_line    0x00011614      0x2ff d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fvwrite.o)
- .debug_line    0x00011913      0x227 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fwalk.o)
- .debug_line    0x00011b3a      0x193 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iswspace.o)
- .debug_line    0x00011ccd      0x23e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-locale.o)
- .debug_line    0x00011f0b      0x278 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-makebuf.o)
- .debug_line    0x00012183      0x207 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-malloc.o)
- .debug_line    0x0001238a      0x3ac d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mallocr.o)
- .debug_line    0x00012736      0x226 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbrtowc.o)
- .debug_line    0x0001295c      0x22a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbtowc_r.o)
- .debug_line    0x00012b86      0x18e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memchr.o)
- .debug_line    0x00012d14      0x186 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memcpy.o)
- .debug_line    0x00012e9a      0x1a6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memmove.o)
- .debug_line    0x00013040      0x195 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mlock.o)
- .debug_line    0x000131d5      0x28c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reallocr.o)
- .debug_line    0x00013461      0x26a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-refill.o)
- .debug_line    0x000136cb      0x206 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sbrkr.o)
- .debug_line    0x000138d1      0x140 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sccl.o)
- .debug_line    0x00013a11      0x239 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-stdio.o)
- .debug_line    0x00013c4a      0x101 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strcmp.o)
- .debug_line    0x00013d4b      0x27d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtol.o)
- .debug_line    0x00013fc8      0x2c3 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoll_r.o)
- .debug_line    0x0001428b      0x27a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoul.o)
- .debug_line    0x00014505      0x292 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoull_r.o)
- .debug_line    0x00014797      0x289 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ungetc.o)
- .debug_line    0x00014a20      0x25f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wbuf.o)
- .debug_line    0x00014c7f      0x21f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wcrtomb.o)
- .debug_line    0x00014e9e      0x227 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wctomb_r.o)
- .debug_line    0x000150c5      0x206 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-writer.o)
- .debug_line    0x000152cb      0x207 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-closer.o)
- .debug_line    0x000154d2      0x255 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fclose.o)
- .debug_line    0x00015727      0x21c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fstatr.o)
- .debug_line    0x00015943      0x208 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-isattyr.o)
- .debug_line    0x00015b4b      0x206 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-lseekr.o)
- .debug_line    0x00015d51      0x205 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-readr.o)
- .debug_line    0x00015f56      0x251 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reent.o)
- .debug_line    0x000161a7       0x97 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_aeabi_uldivmod.o)
- .debug_line    0x0001623e       0x97 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(bpabi.o)
- .debug_line    0x000162d5       0x93 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_dvmd_tls.o)
- .debug_line    0x00016368      0x117 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_divdi3.o)
- .debug_line    0x0001647f      0x104 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_udivdi3.o)
+ .debug_line    0x0000d226     0x11a4 src/tc_capture_waveform_example.o
+ .debug_line    0x0000e3ca      0x231 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__atexit.o)
+ .debug_line    0x0000e5fb      0x124 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fini.o)
+ .debug_line    0x0000e71f      0x183 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-impure.o)
+ .debug_line    0x0000e8a2      0x136 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-init.o)
+ .debug_line    0x0000e9d8      0x225 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iprintf.o)
+ .debug_line    0x0000ebfd      0x18d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memset.o)
+ .debug_line    0x0000ed8a      0x238 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-puts.o)
+ .debug_line    0x0000efc2      0x23c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-scanf.o)
+ .debug_line    0x0000f1fe      0x1fd d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setbuf.o)
+ .debug_line    0x0000f3fb      0x276 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setvbuf.o)
+ .debug_line    0x0000f671      0x184 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strlen.o)
+ .debug_line    0x0000f7f5      0x5fe d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
+ .debug_line    0x0000fdf3      0x4be d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfscanf.o)
+ .debug_line    0x000102b1      0x25c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wsetup.o)
+ .debug_line    0x0001050d      0x275 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x00010782      0x10b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-atexit.o)
+ .debug_line    0x0001088d       0x84 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ctype_.o)
+ .debug_line    0x00010911      0x2bd d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fflush.o)
+ .debug_line    0x00010bce      0x2bb d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-findfp.o)
+ .debug_line    0x00010e89      0x251 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fputwc.o)
+ .debug_line    0x000110da      0x276 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fread.o)
+ .debug_line    0x00011350      0x2c0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-freer.o)
+ .debug_line    0x00011610      0x2ff d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fvwrite.o)
+ .debug_line    0x0001190f      0x227 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fwalk.o)
+ .debug_line    0x00011b36      0x193 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iswspace.o)
+ .debug_line    0x00011cc9      0x23e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-locale.o)
+ .debug_line    0x00011f07      0x278 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-makebuf.o)
+ .debug_line    0x0001217f      0x207 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-malloc.o)
+ .debug_line    0x00012386      0x3ac d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mallocr.o)
+ .debug_line    0x00012732      0x226 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbrtowc.o)
+ .debug_line    0x00012958      0x22a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbtowc_r.o)
+ .debug_line    0x00012b82      0x18e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memchr.o)
+ .debug_line    0x00012d10      0x186 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memcpy.o)
+ .debug_line    0x00012e96      0x1a6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memmove.o)
+ .debug_line    0x0001303c      0x195 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mlock.o)
+ .debug_line    0x000131d1      0x28c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reallocr.o)
+ .debug_line    0x0001345d      0x26a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-refill.o)
+ .debug_line    0x000136c7      0x206 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sbrkr.o)
+ .debug_line    0x000138cd      0x140 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sccl.o)
+ .debug_line    0x00013a0d      0x239 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-stdio.o)
+ .debug_line    0x00013c46      0x101 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strcmp.o)
+ .debug_line    0x00013d47      0x27d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtol.o)
+ .debug_line    0x00013fc4      0x2c3 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoll_r.o)
+ .debug_line    0x00014287      0x27a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoul.o)
+ .debug_line    0x00014501      0x292 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoull_r.o)
+ .debug_line    0x00014793      0x289 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ungetc.o)
+ .debug_line    0x00014a1c      0x25f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wbuf.o)
+ .debug_line    0x00014c7b      0x21f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wcrtomb.o)
+ .debug_line    0x00014e9a      0x227 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wctomb_r.o)
+ .debug_line    0x000150c1      0x206 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-writer.o)
+ .debug_line    0x000152c7      0x207 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-closer.o)
+ .debug_line    0x000154ce      0x255 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fclose.o)
+ .debug_line    0x00015723      0x21c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fstatr.o)
+ .debug_line    0x0001593f      0x208 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-isattyr.o)
+ .debug_line    0x00015b47      0x206 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-lseekr.o)
+ .debug_line    0x00015d4d      0x205 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-readr.o)
+ .debug_line    0x00015f52      0x251 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reent.o)
+ .debug_line    0x000161a3       0x97 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x0001623a       0x97 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(bpabi.o)
+ .debug_line    0x000162d1       0x93 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_dvmd_tls.o)
+ .debug_line    0x00016364      0x117 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_divdi3.o)
+ .debug_line    0x0001647b      0x104 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_udivdi3.o)
 
-.debug_str      0x00000000    0xe3a71
+.debug_str      0x00000000    0xe3a9b
  .debug_str     0x00000000    0xd8425 src/ASF/common/services/delay/sam/cycle_counter.o
                               0xd8c1a (size before relaxing)
  .debug_str     0x000d8425     0x3a55 src/ASF/common/services/clock/sam4l/osc.o
@@ -6771,125 +6771,125 @@ OUTPUT(TC_TC_CAPTURE_WAVEFORM_EXAMPLE4.elf elf32-littlearm)
                               0xcd5a7 (size before relaxing)
  .debug_str     0x000e05cf      0x735 src/ASF/sam/utils/syscalls/gcc/syscalls.o
                                0x52d8 (size before relaxing)
- .debug_str     0x000e0d04      0x914 src/tc_capture_waveform_example.o
-                              0xdea05 (size before relaxing)
- .debug_str     0x000e1618       0xb8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__atexit.o)
+ .debug_str     0x000e0d04      0x93e src/tc_capture_waveform_example.o
+                              0xde9d0 (size before relaxing)
+ .debug_str     0x000e1642       0xb8 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__atexit.o)
                                 0x56d (size before relaxing)
- .debug_str     0x000e16d0       0x96 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fini.o)
+ .debug_str     0x000e16fa       0x96 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fini.o)
                                 0x184 (size before relaxing)
- .debug_str     0x000e1766       0x6f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-impure.o)
+ .debug_str     0x000e1790       0x6f d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-impure.o)
                                 0x518 (size before relaxing)
- .debug_str     0x000e17d5       0xc0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-init.o)
+ .debug_str     0x000e17ff       0xc0 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-init.o)
                                 0x1ae (size before relaxing)
- .debug_str     0x000e1895      0x105 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iprintf.o)
+ .debug_str     0x000e18bf      0x105 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iprintf.o)
                                 0x5c9 (size before relaxing)
- .debug_str     0x000e199a       0x6b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memset.o)
+ .debug_str     0x000e19c4       0x6b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memset.o)
                                 0x14d (size before relaxing)
- .debug_str     0x000e1a05       0xbe d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-puts.o)
+ .debug_str     0x000e1a2f       0xbe d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-puts.o)
                                 0x5e4 (size before relaxing)
- .debug_str     0x000e1ac3       0x78 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-scanf.o)
+ .debug_str     0x000e1aed       0x78 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-scanf.o)
                                 0x5c3 (size before relaxing)
- .debug_str     0x000e1b3b       0x72 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setbuf.o)
+ .debug_str     0x000e1b65       0x72 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setbuf.o)
                                 0x58c (size before relaxing)
- .debug_str     0x000e1bad       0x7e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setvbuf.o)
+ .debug_str     0x000e1bd7       0x7e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-setvbuf.o)
                                 0x5bd (size before relaxing)
- .debug_str     0x000e1c2b       0x71 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strlen.o)
+ .debug_str     0x000e1c55       0x71 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strlen.o)
                                 0x15a (size before relaxing)
- .debug_str     0x000e1c9c      0x122 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
+ .debug_str     0x000e1cc6      0x122 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfiprintf.o)
                                 0x746 (size before relaxing)
- .debug_str     0x000e1dbe      0x1a5 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfscanf.o)
+ .debug_str     0x000e1de8      0x1a5 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-vfscanf.o)
                                 0x75e (size before relaxing)
- .debug_str     0x000e1f63       0x70 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wsetup.o)
+ .debug_str     0x000e1f8d       0x70 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wsetup.o)
                                 0x5ab (size before relaxing)
- .debug_str     0x000e1fd3       0xae d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__call_atexit.o)
+ .debug_str     0x000e1ffd       0xae d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-__call_atexit.o)
                                 0x569 (size before relaxing)
- .debug_str     0x000e2081       0x64 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-atexit.o)
+ .debug_str     0x000e20ab       0x64 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-atexit.o)
                                 0x18a (size before relaxing)
- .debug_str     0x000e20e5       0x6b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ctype_.o)
+ .debug_str     0x000e210f       0x6b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ctype_.o)
                                  0xd0 (size before relaxing)
- .debug_str     0x000e2150       0x7b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fflush.o)
+ .debug_str     0x000e217a       0x7b d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fflush.o)
                                 0x5db (size before relaxing)
- .debug_str     0x000e21cb      0x107 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-findfp.o)
+ .debug_str     0x000e21f5      0x107 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-findfp.o)
                                 0x695 (size before relaxing)
- .debug_str     0x000e22d2       0x81 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fputwc.o)
+ .debug_str     0x000e22fc       0x81 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fputwc.o)
                                 0x5e6 (size before relaxing)
- .debug_str     0x000e2353       0x68 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fread.o)
+ .debug_str     0x000e237d       0x68 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fread.o)
                                 0x5ef (size before relaxing)
- .debug_str     0x000e23bb      0x227 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-freer.o)
+ .debug_str     0x000e23e5      0x227 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-freer.o)
                                 0x6f5 (size before relaxing)
- .debug_str     0x000e25e2       0x95 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fvwrite.o)
+ .debug_str     0x000e260c       0x95 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fvwrite.o)
                                 0x62e (size before relaxing)
- .debug_str     0x000e2677       0x87 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fwalk.o)
+ .debug_str     0x000e26a1       0x87 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fwalk.o)
                                 0x5dd (size before relaxing)
- .debug_str     0x000e26fe       0x65 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iswspace.o)
+ .debug_str     0x000e2728       0x65 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-iswspace.o)
                                 0x15e (size before relaxing)
- .debug_str     0x000e2763      0x2b7 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-locale.o)
+ .debug_str     0x000e278d      0x2b7 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-locale.o)
                                 0x7f9 (size before relaxing)
- .debug_str     0x000e2a1a       0x82 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-makebuf.o)
+ .debug_str     0x000e2a44       0x82 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-makebuf.o)
                                 0x6a5 (size before relaxing)
- .debug_str     0x000e2a9c       0x69 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-malloc.o)
+ .debug_str     0x000e2ac6       0x69 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-malloc.o)
                                 0x52b (size before relaxing)
- .debug_str     0x000e2b05       0xdf d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mallocr.o)
+ .debug_str     0x000e2b2f       0xdf d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mallocr.o)
                                 0x7ab (size before relaxing)
- .debug_str     0x000e2be4       0x7d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbrtowc.o)
+ .debug_str     0x000e2c0e       0x7d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbrtowc.o)
                                 0x5cd (size before relaxing)
- .debug_str     0x000e2c61       0x85 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbtowc_r.o)
+ .debug_str     0x000e2c8b       0x85 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mbtowc_r.o)
                                 0x5d5 (size before relaxing)
- .debug_str     0x000e2ce6       0x6d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memchr.o)
+ .debug_str     0x000e2d10       0x6d d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memchr.o)
                                 0x15d (size before relaxing)
- .debug_str     0x000e2d53       0x73 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memcpy.o)
+ .debug_str     0x000e2d7d       0x73 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memcpy.o)
                                 0x161 (size before relaxing)
- .debug_str     0x000e2dc6       0x6e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memmove.o)
+ .debug_str     0x000e2df0       0x6e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-memmove.o)
                                 0x168 (size before relaxing)
- .debug_str     0x000e2e34       0x78 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mlock.o)
+ .debug_str     0x000e2e5e       0x78 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-mlock.o)
                                 0x520 (size before relaxing)
- .debug_str     0x000e2eac       0x4e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reallocr.o)
+ .debug_str     0x000e2ed6       0x4e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reallocr.o)
                                 0x67d (size before relaxing)
- .debug_str     0x000e2efa       0x6a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-refill.o)
+ .debug_str     0x000e2f24       0x6a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-refill.o)
                                 0x5d1 (size before relaxing)
- .debug_str     0x000e2f64       0x62 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sbrkr.o)
+ .debug_str     0x000e2f8e       0x62 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sbrkr.o)
                                 0x50f (size before relaxing)
- .debug_str     0x000e2fc6       0x6a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sccl.o)
+ .debug_str     0x000e2ff0       0x6a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-sccl.o)
                                 0x1d7 (size before relaxing)
- .debug_str     0x000e3030       0xc2 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-stdio.o)
+ .debug_str     0x000e305a       0xc2 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-stdio.o)
                                 0x5f6 (size before relaxing)
- .debug_str     0x000e30f2       0x69 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strcmp.o)
+ .debug_str     0x000e311c       0x69 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strcmp.o)
                                 0x14b (size before relaxing)
- .debug_str     0x000e315b       0x8a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtol.o)
+ .debug_str     0x000e3185       0x8a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtol.o)
                                 0x53d (size before relaxing)
- .debug_str     0x000e31e5       0x67 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoll_r.o)
+ .debug_str     0x000e320f       0x67 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoll_r.o)
                                 0x52e (size before relaxing)
- .debug_str     0x000e324c       0x78 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoul.o)
+ .debug_str     0x000e3276       0x78 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoul.o)
                                 0x540 (size before relaxing)
- .debug_str     0x000e32c4       0x68 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoull_r.o)
+ .debug_str     0x000e32ee       0x68 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-strtoull_r.o)
                                 0x530 (size before relaxing)
- .debug_str     0x000e332c       0x74 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ungetc.o)
+ .debug_str     0x000e3356       0x74 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-ungetc.o)
                                 0x5d7 (size before relaxing)
- .debug_str     0x000e33a0       0x69 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wbuf.o)
+ .debug_str     0x000e33ca       0x69 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wbuf.o)
                                 0x5b0 (size before relaxing)
- .debug_str     0x000e3409       0x76 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wcrtomb.o)
+ .debug_str     0x000e3433       0x76 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wcrtomb.o)
                                 0x5cd (size before relaxing)
- .debug_str     0x000e347f       0x86 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wctomb_r.o)
+ .debug_str     0x000e34a9       0x86 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-wctomb_r.o)
                                 0x5dc (size before relaxing)
- .debug_str     0x000e3505       0x63 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-writer.o)
+ .debug_str     0x000e352f       0x63 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-writer.o)
                                 0x50c (size before relaxing)
- .debug_str     0x000e3568       0x63 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-closer.o)
+ .debug_str     0x000e3592       0x63 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-closer.o)
                                 0x4fc (size before relaxing)
- .debug_str     0x000e35cb       0x74 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fclose.o)
+ .debug_str     0x000e35f5       0x74 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fclose.o)
                                 0x5d8 (size before relaxing)
- .debug_str     0x000e363f       0x69 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fstatr.o)
+ .debug_str     0x000e3669       0x69 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-fstatr.o)
                                 0x5f6 (size before relaxing)
- .debug_str     0x000e36a8       0x64 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-isattyr.o)
+ .debug_str     0x000e36d2       0x64 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-isattyr.o)
                                 0x506 (size before relaxing)
- .debug_str     0x000e370c       0x63 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-lseekr.o)
+ .debug_str     0x000e3736       0x63 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-lseekr.o)
                                 0x511 (size before relaxing)
- .debug_str     0x000e376f       0x62 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-readr.o)
+ .debug_str     0x000e3799       0x62 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-readr.o)
                                 0x50a (size before relaxing)
- .debug_str     0x000e37d1       0x9c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reent.o)
+ .debug_str     0x000e37fb       0x9c d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m\libc.a(lib_a-reent.o)
                                 0x545 (size before relaxing)
- .debug_str     0x000e386d       0xa6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(bpabi.o)
+ .debug_str     0x000e3897       0xa6 d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(bpabi.o)
                                 0x11e (size before relaxing)
- .debug_str     0x000e3913      0x15e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_divdi3.o)
+ .debug_str     0x000e393d      0x15e d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_divdi3.o)
                                 0x259 (size before relaxing)
  .debug_str     0x00000000      0x25a d:/program files (x86)/atmel/atmel toolchain/arm gcc/native/4.7.3.1029/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m\libgcc.a(_udivdi3.o)
 

@@ -127,11 +127,11 @@ extern "C" {
 /// @endcond
 
 #define STRING_EOL    "\r"
-#define STRING_HEADER "--TC capture waveform Example --\r\n" \
-		"-- "BOARD_NAME " --\r\n" \
-		"-- Compiled: "__DATE__ " "__TIME__ " --"STRING_EOL
+#define STRING_HEADER "--Servo control --\r\n" \
+"-- "BOARD_NAME " --\r\n" \
+"-- Compiled: "__DATE__ " "__TIME__ " --"STRING_EOL
 
-#define TC_CAPTURE_TIMER_SELECTION TC_CMR_TCCLKS_TIMER_CLOCK3
+//#define TC_CAPTURE_TIMER_SELECTION TC_CMR_TCCLKS_TIMER_CLOCK3
 
 struct waveconfig_t {
 	/** Internal clock signals selection. */
@@ -331,7 +331,7 @@ int main(void)
 	configure_console();
 
 	/* Output example information */
-	printf("-- TC capture waveform Example --\r\n");
+	printf("-- 2D Servo control --\r\n");
 	printf("-- %s\n\r", BOARD_NAME);
 	printf("-- Compiled: %s %s --\n\r", __DATE__, __TIME__);
 
@@ -342,8 +342,8 @@ int main(void)
 			TC_PERIPHERAL, TC_CHANNEL_WAVEFORM);
 	tc_waveform_initialize_xaxis();
 	tc_waveform_initialize_yaxis();
-	dutycycle1 = gc_waveconfig[5].us_dutycycle;
-	dutycycle2 = gc_waveconfig[5].us_dutycycle;	
+	dutycycle1 = gc_waveconfig[4].us_dutycycle;
+	dutycycle2 = gc_waveconfig[4].us_dutycycle;	
 	/* Display menu */
 	display_menu();
 
@@ -433,9 +433,9 @@ int main(void)
 					printf("Capturing ... , press 's' to stop capture first \r");
 				}
 			}
-			else printf("Key 0x%02x pressed\n\r", key);
-
-			break;
+			//else printf("Key 0x%02x pressed\n\r", key);
+//
+			//break;
 		}
 	}
 }
