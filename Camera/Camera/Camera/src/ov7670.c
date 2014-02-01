@@ -385,6 +385,7 @@ uint8_t GetImageIfAvailiable( int offset )
 		//FRESULT fr;
 		int i,j, ptr;
 		uint16_t Temp;
+		uint16_t Check;
 		FIFO_nRRST_CLR; //Reset Read Pointer
 		FIFO_RCLK_SET;
 		FIFO_RCLK_CLR;
@@ -395,14 +396,25 @@ uint8_t GetImageIfAvailiable( int offset )
 			It's broken down into rows and colums and it reads L/R; U/D.
 			I've set it to send the raw values up the UART for now.
 			I'm also not certain on the endianness...*/
+		for(;;){
+			usart_getchar(BOARD_USART,&Check);
+			if(Check == 'S') break;
+		}
 		for (j=HEIGHT; j > 0; j--) //Read all data
 		{
-			
 			for (i=0; i < WIDTH; i++)
 			{
 				Temp=FIFO_TO_AVR();
 				usart_putchar(BOARD_USART, Temp);
 				usart_putchar(BOARD_USART, (Temp >> 8));
+				for(;;){
+					usart_getchar(BOARD_USART,&Check);
+					if(Check == 'P') break;
+				}
+			}
+			for(;;){
+				usart_getchar(BOARD_USART,&Check);
+				if(Check == 'L') break;
 			}
 		}
 		/*f_close(&File);*/
