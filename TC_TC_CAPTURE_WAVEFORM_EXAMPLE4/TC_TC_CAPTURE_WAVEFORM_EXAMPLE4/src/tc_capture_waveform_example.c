@@ -142,7 +142,7 @@ struct waveconfig_t {
 	uint16_t us_dutycycle;
 };
 
-#define SERVO_FREQ		350
+#define  SERVO_FREQ		350
 /** TC waveform configurations */
 static const struct waveconfig_t gc_waveconfig[] = {
 	{TC_CMR_TCCLKS_TIMER_CLOCK2, SERVO_FREQ,  0},
@@ -194,13 +194,14 @@ static void display_menu(void)
 			"  c: Capture waveform from TC%d channel %d\n\r"
 			"  s: Stop capture and display captured informations \n\r"
 			"  h: Display menu \n\r"
-			"------\n\r\r", TC_PERIPHERAL,TC_CHANNEL_CAPTURE);
+			//"------\n\r\r", TC_PERIPHERAL,TC_CHANNEL_CAPTURE
+			);
 }
 
 /**
  * \brief Configure TC TC_CHANNEL_WAVEFORM in waveform operating mode.
  */
-static void tc_waveform_initialize(void)
+static void tc_waveform_initialize_xaxis(void)
 {
 	/* Configure PIO Pins for TC */
 	ioport_set_pin_mode(PIN_TC_WAVEFORM, PIN_TC_WAVEFORM_MUX);
@@ -221,8 +222,31 @@ static void tc_waveform_initialize(void)
 	tc_start(TC, TC_CHANNEL_WAVEFORM);
 	
 }
+
+static void tc_waveform_initialize_yaxis(void)
+{
+	/* Configure PIO Pins for TC */
+	ioport_set_pin_mode(PIN_TC_WAVEFORMYAXIS, PIN_TC_WAVEFORM_MUXYAXIS);
+	/* Disable IO to enable peripheral mode) */
+	ioport_disable_pin(PIN_TC_WAVEFORMYAXIS);
+	/* Configure the PMC to enable the TC module. */
+	sysclk_enable_peripheral_clock(ID_TC_WAVEFORM);
+
+	/* Init TC to waveform mode. */
+	tc_init(TC, TC_CHANNEL_WAVEFORMYAXIS,
+	/* Waveform Clock Selection */
+	TC_CMR_TCCLKS_TIMER_CLOCK2
+	| TC_CMR_WAVE /* Waveform mode is enabled */
+	| TC_CMR_ACPA_SET /* RA Compare Effect: set */
+	| TC_CMR_ACPC_CLEAR /* RC Compare Effect: clear */
+	| TC_CMR_CPCTRG /* UP mode with automatic trigger on RC Compare */
+	);
+	tc_start(TC, TC_CHANNEL_WAVEFORMYAXIS);
+	
+}
 #define CLOCK_DIV	2
-void servo_move(uint32_t dutycycle)
+
+void servo_move_xaxis(uint32_t dutycycle)
 {
 	uint32_t ra, rc;
 	/* Configure waveform frequency and duty cycle. */
@@ -240,11 +264,33 @@ void servo_move(uint32_t dutycycle)
 			dutycycle);
 }
 
-static inline void servo_stop()
+void servo_move_yaxis(uint32_t dutycycle)
 {
-	servo_move(0);
+	uint32_t ra1, rc1;
+	/* Configure waveform frequency and duty cycle. */
+	rc1 = (sysclk_get_peripheral_bus_hz(TC) /
+	CLOCK_DIV /
+	SERVO_FREQ);
+	tc_write_rc(TC, TC_CHANNEL_WAVEFORMYAXIS, rc1);
+	ra1 = (100 - dutycycle) * rc1 / 100;
+	tc_write_ra(TC, TC_CHANNEL_WAVEFORMYAXIS, ra1);
+
+	/* Enable TC TC_CHANNEL_WAVEFORM. */
+	
+	printf("Start waveform: Frequency = %d Hz,Duty Cycle = %2d%%\n\r",
+	SERVO_FREQ,
+	dutycycle);
 }
 
+static inline void servo_stop_xaxis()
+{
+	servo_move_xaxis(0);
+}
+
+static inline void servo_stop_yaxis()
+{
+	servo_move_yaxis(0);
+}
 /**
  *  Configure UART console.
  */
@@ -275,8 +321,8 @@ static void configure_console(void)
 int main(void)
 {
 	uint8_t key;
-	uint16_t frequence, dutycycle;
-	dutycycle = 0;
+	uint16_t frequence, dutycycle1,dutycycle2;
+   
 	/* Initialize the SAM system */
 	sysclk_init();
 	board_init();
@@ -294,8 +340,10 @@ int main(void)
 	/* Configure TC TC_CHANNEL_WAVEFORM as waveform operating mode */
 	printf("Configure TC%d channel %d as waveform operating mode \n\r",
 			TC_PERIPHERAL, TC_CHANNEL_WAVEFORM);
-	tc_waveform_initialize();
-	
+	tc_waveform_initialize_xaxis();
+	tc_waveform_initialize_yaxis();
+	dutycycle1 = gc_waveconfig[5].us_dutycycle;
+	dutycycle2 = gc_waveconfig[5].us_dutycycle;	
 	/* Display menu */
 	display_menu();
 
@@ -307,25 +355,82 @@ int main(void)
 			display_menu();
 			break;
 		case 'a':
-			dutycycle += SERVO_STEP;
-			servo_move(dutycycle);
-			delay_ms(500);
-			servo_stop();
+			dutycycle1 += SERVO_STEP;
+			if(dutycycle1 < 20)
+			{
+				dutycycle1 = 20;
+			}
+			else if (dutycycle1 >100)
+			{
+				dutycycle1 = 100;
+			}
+			
+				servo_move_xaxis(dutycycle1);
+				delay_ms(500);
+				servo_stop_xaxis();
+				//delay_ms(500);
+			
 			break;
 		case 'd':
-			dutycycle -= SERVO_STEP;
-			servo_move(dutycycle);
-			delay_ms(500);
-			servo_stop();
+			dutycycle1 -= SERVO_STEP;
+				if(dutycycle1 < 20)
+				{
+					dutycycle1 = 20;
+				}
+				else if (dutycycle1 >100)
+				{
+					dutycycle1 = 100;
+				}
+				servo_move_xaxis(dutycycle1);
+				delay_ms(500);
+				servo_stop_xaxis();
+				//delay_ms(500);
+		
+			break;
+		case 'w':
+			dutycycle2 += SERVO_STEP;
+				if(dutycycle2 < 20)
+				{
+					dutycycle2 = 20;
+				}
+				else if (dutycycle2 >100)
+				{
+					dutycycle2 = 100;
+				}
+				servo_move_yaxis(dutycycle2);
+				delay_ms(500);
+				servo_stop_yaxis();
+				//delay_ms(500);
+			
+			break;
+		case 's':
+				dutycycle2 -= SERVO_STEP;
+					if(dutycycle2 < 20)
+					{
+						dutycycle2 = 20;
+					}
+					else if (dutycycle2 >100)
+					{
+						dutycycle2 = 100;
+					}
+					servo_move_yaxis(dutycycle2);
+					delay_ms(500);
+					servo_stop_yaxis();
+					//delay_ms(500);
+			
 			break;
 		default:
 			/* Set waveform configuration #n */
 			if ((key >= '0') && (key <= ('0' + gc_uc_nbconfig - 1))) {
 				if (!gs_ul_captured_pulses) {
 					gs_uc_configuration = key - '0';
-					servo_move(gc_waveconfig[gs_uc_configuration].us_dutycycle);
+					servo_move_xaxis(dutycycle1);
+					servo_move_yaxis(dutycycle2);
+					delay_ms(500);
+					servo_stop_xaxis();
+					servo_stop_yaxis();
 				} else {
-					puts("Capturing ... , press 's' to stop capture first \r");
+					printf("Capturing ... , press 's' to stop capture first \r");
 				}
 			}
 			else printf("Key 0x%02x pressed\n\r", key);
