@@ -62,10 +62,10 @@
 #define PIN_TC_WAVEFORM_MUX  MUX_PC04D_TC1_A2
 
 /** Configure TC1 channel 1 as capture input. */
-#define TC_CHANNEL_WAVEFORMYAXIS  1
+#define TC_CHANNEL_WAVEFORMYAXIS  0
 #define ID_TC_WAVEFORM       TC1
-#define PIN_TC_WAVEFORMYAXIS     PIN_PC02D_TC1_A1
-#define PIN_TC_WAVEFORM_MUXYAXIS  MUX_PC02D_TC1_A1
+#define PIN_TC_WAVEFORMYAXIS     PIN_PC15A_TC1_A0
+#define PIN_TC_WAVEFORM_MUXYAXIS  MUX_PC15A_TC1_A0
 
 /** Use TC11_Handler for TC capture interrupt */
 #define TC_Handler  TC11_Handler

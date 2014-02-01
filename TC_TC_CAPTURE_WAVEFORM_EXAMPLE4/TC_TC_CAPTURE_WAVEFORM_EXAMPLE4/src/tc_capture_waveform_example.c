@@ -201,7 +201,7 @@ static void display_menu(void)
 /**
  * \brief Configure TC TC_CHANNEL_WAVEFORM in waveform operating mode.
  */
-static void tc_waveform_initialize_xaxis(void)
+static void tc_waveform_initialize(void)
 {
 	/* Configure PIO Pins for TC */
 	ioport_set_pin_mode(PIN_TC_WAVEFORM, PIN_TC_WAVEFORM_MUX);
@@ -221,10 +221,7 @@ static void tc_waveform_initialize_xaxis(void)
 	);
 	tc_start(TC, TC_CHANNEL_WAVEFORM);
 	
-}
-
-static void tc_waveform_initialize_yaxis(void)
-{
+	//configure Y Axis
 	/* Configure PIO Pins for TC */
 	ioport_set_pin_mode(PIN_TC_WAVEFORMYAXIS, PIN_TC_WAVEFORM_MUXYAXIS);
 	/* Disable IO to enable peripheral mode) */
@@ -340,10 +337,12 @@ int main(void)
 	/* Configure TC TC_CHANNEL_WAVEFORM as waveform operating mode */
 	printf("Configure TC%d channel %d as waveform operating mode \n\r",
 			TC_PERIPHERAL, TC_CHANNEL_WAVEFORM);
-	tc_waveform_initialize_xaxis();
-	tc_waveform_initialize_yaxis();
-	dutycycle1 = gc_waveconfig[4].us_dutycycle;
-	dutycycle2 = gc_waveconfig[4].us_dutycycle;	
+	tc_waveform_initialize();
+
+	dutycycle1 = 50; //set to the middle
+	dutycycle2 = 50;
+	servo_move_xaxis(dutycycle1);
+	servo_move_yaxis(dutycycle2);
 	/* Display menu */
 	display_menu();
 
