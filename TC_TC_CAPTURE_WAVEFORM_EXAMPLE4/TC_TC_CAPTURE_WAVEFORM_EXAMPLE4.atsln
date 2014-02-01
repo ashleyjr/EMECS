@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "TC_TC_CAPTURE_WAVEFORM_EXAMPLE4", "TC_TC_CAPTURE_WAVEFORM_EXAMPLE4\TC_TC_CAPTURE_WAVEFORM_EXAMPLE4.cproj", "{90EDA0D7-8AC5-4F83-B7AA-5DC722BC6E6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90EDA0D7-8AC5-4F83-B7AA-5DC722BC6E6A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{90EDA0D7-8AC5-4F83-B7AA-5DC722BC6E6A}.Debug|ARM.Build.0 = Debug|ARM
+		{90EDA0D7-8AC5-4F83-B7AA-5DC722BC6E6A}.Release|ARM.ActiveCfg = Release|ARM
+		{90EDA0D7-8AC5-4F83-B7AA-5DC722BC6E6A}.Release|ARM.Build.0 = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
